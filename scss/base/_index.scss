@@ -1,0 +1,10 @@
+/*
+This file is used to contain all base imports.
+Files inside this folder can contain global styles used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+
+// Forward Base files
+
+@forward 'base';
+@forward 'typography';

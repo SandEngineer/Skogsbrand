@@ -1,0 +1,8 @@
+/*
+This file is used to contain all theme imports.
+Files inside this folder can contain site-wide themes used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+
+// Forward Theme files
+@forward 'default';

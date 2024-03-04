@@ -1,0 +1,139 @@
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all abstracts imports.
+Files inside this folder can contain abstract settings, helpers or functions. They have no direct output.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*
+This file is used for variables that don't fit more naturally under any other category.
+Consider this the "everything else" file.
+*/
+/*
+This file is used to contain all base imports.
+Files inside this folder can contain global styles used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+h6, h5, h4, h3, h2, h1 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  color: #efefef;
+  text-transform: lowercase;
+}
+
+.brodtext {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: #efefef;
+}
+
+b,
+strong {
+  font-family: "Prompt";
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+div#toolTip ul {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/*
+This file is used to contain all component imports.
+Files inside this folder should contain all styles relating to a reusable component.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all layout imports.
+Files inside this folder can contain layouts used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all page imports.
+Files inside this folder can contain page-specific styles used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all theme imports.
+Files inside this folder can contain site-wide themes used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used for our default theme across the entire site.
+*/
+body {
+  background-color: #101110;
+  height: 1000;
+}
+
+/*
+This file is used to contain all utilities imports.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all vendor imports.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all Bootstrap imports.
+To begin with we use the entire thing - once we figure out which parts are relevant we can clean this up and pick and choose
+*/
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+section.content {
+  flex: 1 1 80%;
+  padding: 30px;
+  position: relative;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+object#map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 998;
+}
+
+div#toolTip {
+  max-width: 300px;
+  box-shadow: rgba(121, 121, 121, 0.274) 1.95px 1.95px 2.6px;
+  position: absolute;
+  transition: 0.2s ease-out;
+  background-color: #ecf0f1;
+  border-radius: 3px;
+  z-index: 999;
+  pointer-events: none;
+}
+
+div#toolTip ul {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+}
+
+div#toolTip ul li {
+  margin-bottom: 3px;
+}
+
+/*# sourceMappingURL=styles.css.map */

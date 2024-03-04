@@ -1,0 +1,11 @@
+/*
+This file is used to contain all layout imports.
+Files inside this folder can contain layouts used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+
+// Forward Layout files
+@forward 'footer';
+@forward 'header';
+@forward 'navigation';
+@forward 'sidebar';

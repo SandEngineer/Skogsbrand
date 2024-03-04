@@ -1,0 +1,15 @@
+/*
+This file is used to contain all page imports.
+Files inside this folder can contain page-specific styles used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+
+// Forward Page files
+@forward 'about';
+@forward 'activities';
+@forward 'area';
+@forward 'booking';
+@forward 'confirmation';
+@forward 'home';
+@forward 'landing';
+@forward 'map';
