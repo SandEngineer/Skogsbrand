@@ -1,4 +1,4 @@
-// /* Fungerade kod till svg filen. */
+// /* Fungerade kod till SE.svg filen. */
 /* Effekten som blir på hover/mouseEntered går att styla här i myStyles */
 
 const myStyles = `
@@ -7,9 +7,9 @@ const myStyles = `
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  fill: rgb(224 46 130 / 0.1);
-  stroke: rgba(224,46,130,0.1);
-  stroke-width: 2;
+  fill: rgb(239 239 239 / 0.1);
+
+
 `;
 
 const resetStyles = `
@@ -32,11 +32,13 @@ function loadMap() {
   map.addEventListener("mouseout", mouseGone, false);
 
   // Show tooltip on mousemove
+  //targetar cssText som skriver över css i "klumpar" istället för individuella styles - går t.ex. inte att skriva in saker med bindestreck efter "style. "
   function mouseEntered(e) {
     var target = e.target;
+    console.log("Hovered Element Classes:", target.classList);
     if (target.classList.contains("hover")) {
-      //targetar cssText som skriver över css i "klumpar" istället för individuella styles - går t.ex. inte att skriva in saker med bindestreck efter "style. "
       target.style.cssText = myStyles;
+
       var details = e.target.attributes;
 
       // Follow cursor
