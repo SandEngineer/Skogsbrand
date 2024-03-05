@@ -35,7 +35,6 @@ function loadMap() {
   //targetar cssText som skriver över css i "klumpar" istället för individuella styles - går t.ex. inte att skriva in saker med bindestreck efter "style. "
   function mouseEntered(e) {
     var target = e.target;
-    console.log("Hovered Element Classes:", target.classList);
     if (target.classList.contains("hover")) {
       target.style.cssText = myStyles;
 
