@@ -3,9 +3,9 @@ This file is used for our default theme across the entire site.
 */
 
 // Fetches variables from the entire folder to use
-@use "../abstracts" as *; 
+@use "../abstracts" as *;
 
 body {
   background-color: $kol;
-  height: 1000;  // Temporär bara för att se att det funkar - skriv över/ändra/ta bort vid behov
+  height: 100vh;  // Temporär bara för att se att det funkar - skriv över/ändra/ta bort vid behov
 }
