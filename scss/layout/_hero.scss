@@ -1,0 +1,19 @@
+// Fetches variables from the entire folder to use
+@use "../abstracts" as *;
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(16,17,16,1) 0%,rgba(16,17,16,0.5) 80%,rgba(16,17,16,0.1) 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
