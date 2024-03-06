@@ -18,6 +18,10 @@ This file is used to contain all base imports.
 Files inside this folder can contain global styles used in the project.
 @forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
 */
+body {
+  margin: 0px;
+}
+
 /*
 This file is used to contain all scss imports.
 @use the entire folder instead of having to @import every file individually
@@ -59,6 +63,27 @@ Files inside this folder can contain layouts used in the project.
 @forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
 */
 /*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, rgb(16, 17, 16) 0%, rgba(16, 17, 16, 0.5) 80%, rgba(16, 17, 16, 0.1) 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/*
 This file is used to contain all page imports.
 Files inside this folder can contain page-specific styles used in the project.
 @forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
@@ -77,6 +102,7 @@ This file is used for our default theme across the entire site.
 */
 body {
   background-color: #101110;
+  width: 100%;
   height: 100vh;
 }
 
