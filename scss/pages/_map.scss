@@ -1,0 +1,17 @@
+// Fetches variables from the entire folder to use
+@use "../abstracts" as *;
+
+// Tooltip text for map
+div#toolTip {
+    ul {
+    font-family: $noto-sans;
+    font-weight: 400;
+    font-size: 0.8rem;
+    }
+    // "bold" stylen för rubriken i tooltip
+    b {
+        font-family: $prompt;
+        font-weight: 800;
+        font-size: 1.2rem;
+    }
+}

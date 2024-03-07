@@ -2,25 +2,21 @@
 @use "../abstracts" as *;
 
 .form__label-text {
-    text-transform: lowercase;
-    font-family: $prompt;
-    color: $aska;
-    font-weight: 800;
-
+  text-transform: lowercase;
+  font-family: $prompt;
+  color: $aska;
+  font-weight: 800;
 }
 
 .form__input {
+  border-color: $isbjorn;
 
-    border-color: rgb(43, 116, 252);
+  &:focus {
+    border-color: $lemon-margarita;
+    filter: drop-shadow(0 0 0.5rem $isbjorn);
+  }
+}
 
-    &:focus {
-        border-color: rgb(242, 255, 129);
-        filter: drop-shadow(0 0 0.5rem $isbjorn);
-    }
-    }
-
-
-    .form__feedback {
-        font-family: $noto-sans;
-        font-size: .8rem;
-    }
+.form__feedback {
+  font-size: 0.8rem;
+}
