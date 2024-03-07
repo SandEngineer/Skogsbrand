@@ -1,13 +1,6 @@
 // Fetches variables from the entire folder to use
 @use "../abstracts" as *;
 
-.form__label-text {
-  text-transform: lowercase;
-  font-family: $prompt;
-  color: $aska;
-  font-weight: 800;
-}
-
 .form__input {
   border-color: $isbjorn;
 
