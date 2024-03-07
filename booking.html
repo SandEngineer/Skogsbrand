@@ -16,7 +16,7 @@
 
   <body>
     <header>
-      <h1>Hello, world!</h1>
+      <h1>buy tickets</h1>
       <p class="brodtext">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
         doloribus laboriosam amet reprehenderit enim commodi quam, delectus,
@@ -25,153 +25,159 @@
       </p>
     </header>
     <main>
-      <form
-        class="row g-3 row-cols-1 row-cols-sm-2 needs-validation"
-        novalidate
-      >
-        <!-- Välja datum -->
-        <div class="col">
-          <label for="userDate" class="form-label">Date</label>
-          <input
-            type="date"
-            class="form-control"
-            id="userDate"
-            name="userDate"
-            value="2024-05-31"
-            min="2024-05-31"
-            max="2024-09-29"
-            required
-          />
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Please select a date.</div>
-        </div>
-        <!-- Antal biljetter  -->
-        <div class="col">
-          <label for="userTickets" class="form-label">Amount</label>
-          <input
-            type="number"
-            class="form-control"
-            id="userTickets"
-            name="userTickets"
-            value="1"
-            min="1"
-            max="10"
-            required
-          />
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Please select an amount.</div>
-        </div>
-        <!-- Förnamn -->
-        <div class="col">
-          <label for="userName" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="userName" required />
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Please enter your first name.</div>
-        </div>
-        <!-- Efternamn -->
-        <div class="col">
-          <label for="userLastname" class="form-label">Last Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="userLastname"
-            name="userLastname"
-            required
-          />
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Please enter your last name.</div>
-        </div>
-        <!-- E-mail  -->
-        <div class="col">
-          <label for="userEmail" class="form-label">E-mail</label>
-          <input
-            type="email"
-            class="form-control"
-            id="userEmail"
-            name="userEmail"
-            required
-          />
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">
-            Please provide a valid e-mail adress.
-          </div>
-        </div>
-        <!-- Telefonnummer  -->
-        <div class="col">
-          <label for="userPhone" class="form-label">Telephone number</label>
-          <input
-            type="tel"
-            class="form-control"
-            id="userPhone"
-            name="userPhone"
-            required
-          />
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Please provide a valid number.</div>
-        </div>
-        <!-- Betalning  -->
-        <div class="col">
-          <div class="form-check">
-            <label for="swish" class="form-check-label"> Swish </label>
+      <div class="container">
+        <form
+          class="row g-3 row-cols-1 row-cols-sm-2 needs-validation"
+          novalidate
+        >
+          <!-- Välja datum -->
+          <div class="col">
+            <label for="userDate" class="form-label form__label-text">Date</label>
             <input
-              class="form-check-input"
-              type="radio"
-              id="swish"
-              name="paymentOption"
-              value="Swish"
+              type="date"
+              class="form-control form__input"
+              id="userDate"
+              name="userDate"
+              value="2024-05-31"
+              min="2024-05-31"
+              max="2024-09-29"
               required
             />
+            <div class="valid-feedback form__feedback">Looks good!</div>
+            <div class="invalid-feedback form__feedback">Please select a date.</div>
           </div>
-          <div class="form-check">
-            <label for="klarna" class="form-check-label"> Klarna </label>
+          <!-- Antal biljetter  -->
+          <div class="col">
+            <label for="userTickets" class="form-label form__label-text">Amount</label>
             <input
-              class="form-check-input"
-              type="radio"
-              id="klarna"
-              name="paymentOption"
-              value="Klarna"
+              type="number"
+              class="form-control form__input"
+              id="userTickets"
+              name="userTickets"
+              value="1"
+              min="1"
+              max="10"
               required
             />
+            <div class="valid-feedback form__feedback">Looks good!</div>
+            <div class="invalid-feedback form__feedback">Please select an amount.</div>
           </div>
-          <div class="form-check">
-            <label for="bankTransfer" class="form-check-label">
-              Banköverföring
-            </label>
+          <!-- Förnamn -->
+          <div class="col">
+            <label for="userName" class="form-label form__label-text">First Name</label>
+            <input type="text" class="form-control form__input" id="userName" required />
+            <div class="valid-feedback form__feedback">Looks good!</div>
+            <div class="invalid-feedback form__feedback">Please enter your first name.</div>
+          </div>
+          <!-- Efternamn -->
+          <div class="col">
+            <label for="userLastname" class="form-label form__label-text">Last Name</label>
             <input
-              class="form-check-input"
-              type="radio"
-              id="bankTransfer"
-              name="paymentOption"
-              value="Banköverföring"
+              type="text"
+              class="form-control form__input"
+              id="userLastname"
+              name="userLastname"
               required
             />
+            <div class="valid-feedback form__feedback">Looks good!</div>
+            <div class="invalid-feedback form__feedback">Please enter your last name.</div>
           </div>
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Please select a payment option.</div>
-        </div>
-        <!-- Terms and agrees  -->
-        <div class="col">
-          <div class="form-check">
+          <!-- E-mail  -->
+          <div class="col">
+            <label for="userEmail" class="form-label form__label-text">E-mail</label>
             <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="invalidCheck"
+              type="email"
+              class="form-control form__input"
+              id="userEmail"
+              name="userEmail"
               required
             />
-            <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
+            <div class="valid-feedback form__feedback">Looks good!</div>
+            <div class="invalid-feedback form__feedback">
+              Please provide a valid e-mail adress.
             </div>
           </div>
-        </div>
-        <div class="col">
-          <button class="btn btn-primary" type="submit">Pay</button>
-        </div>
-      </form>
+          <!-- Telefonnummer  -->
+          <div class="col">
+            <label for="userPhone" class="form-label form__label-text">Telephone number</label>
+            <input
+              type="tel"
+              class="form-control form__input"
+              id="userPhone"
+              name="userPhone"
+              required
+            />
+            <div class="valid-feedback form__feedback">Looks good!</div>
+            <div class="invalid-feedback form__feedback">Please provide a valid number.</div>
+          </div>
+          <!-- Betalning  -->
+          <div class="col">
+            <p class="form__label-text">Betalningsalternativ</p>
+            <div class="form-check">
+              <label for="swish" class="form-check-label form__label-text"> Swish </label>
+              <input
+                class="form-check-input form__input"
+                type="radio"
+                id="swish"
+                name="paymentOption"
+                value="Swish"
+                required
+              />
+            </div>
+            <div class="form-check">
+              <label for="klarna" class="form-check-label form__label-text"> Klarna </label>
+              <input
+                class="form-check-input form__input"
+                type="radio"
+                id="klarna"
+                name="paymentOption"
+                value="Klarna"
+                required
+              />
+            </div>
+            <div class="form-check">
+              <label for="bankTransfer" class="form-check-label form__label-text">
+                Banköverföring
+              </label>
+              <input
+                class="form-check-input form__input"
+                type="radio"
+                id="bankTransfer"
+                name="paymentOption"
+                value="Banköverföring"
+                required
+              />
+            </div>
+            <div class="valid-feedback form__feedback">Looks good!</div>
+            <div class="invalid-feedback form__feedback">Please select a payment option.</div>
+          </div>
+          <!-- Terms and agrees  -->
+          <div class="col">
+            <div class="form-check">
+              <input
+                class="form-check-input form__input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label form__label-text" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback form__feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button class="button btn" type="submit">go back</button>
+          </div>
+          <div class="col">
+            <button class="button btn button--orange" type="submit">betala</button>
+          </div>
 
+        </form>
+      </div>
       <!-- Kod för bokningssystemet -->
       <!--     <form id="myForm"> -->
       <!-- Välja datum -->
@@ -241,8 +247,8 @@
 
       <!-- Viktigt att se till att korrekt scriptfil kopplas till bokningssystemet -->
       <footer></footer>
-      
-<!--       <script src="js/validation.js"></script> -->
+
+      <!--       <script src="js/validation.js"></script> -->
       <script src="js/payment.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
