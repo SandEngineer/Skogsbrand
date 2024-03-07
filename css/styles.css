@@ -57,13 +57,94 @@ This file is used to contain all component imports.
 Files inside this folder should contain all styles relating to a reusable component.
 @forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
 */
-.form-label {
-  background-color: rgb(68, 68, 68);
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.button, .button:link, .button:visited {
+  text-transform: lowercase;
+  font-family: "Prompt", sans-serif;
+  color: #efefef;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 0.7rem 3rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  border-color: #efefef;
+  border-width: 3px;
+}
+.button:hover {
+  transform: translateY(-1px);
+  background-color: #efefef;
+}
+.button:active {
+  transform: translateY(-1px);
+}
+.button--orange {
+  background-color: #ea652f;
+  border-color: #ea652f;
+}
+.button--orange:hover {
+  transform: translateY(-1px);
+  color: #efefef;
+  box-shadow: 0 0 1rem #ea652f;
+  background-color: #ea652f;
+}
+.button--pink {
+  background-color: #e02e87;
+  border-color: #e02e87;
+}
+.button--pink:hover {
+  transform: translateY(-1px);
+  color: #efefef;
+  box-shadow: 0 0 1rem #e02e87;
+  background-color: #e02e87;
+}
+.button--green {
+  background-color: #6bb239;
+  border-color: #6bb239;
+}
+.button--green:hover {
+  transform: translateY(-1px);
+  color: #efefef;
+  box-shadow: 0 0 1rem #6bb239;
+  background-color: #6bb239;
+}
+.button--blue {
+  background-color: #36a4da;
+  border-color: #36a4da;
+}
+.button--blue:hover {
+  transform: translateY(-1px);
+  color: #efefef;
+  box-shadow: 0 0 1rem #36a4da;
+  background-color: #36a4da;
 }
 
-.form-control {
-  background-color: #101110;
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.form__label-text {
+  text-transform: lowercase;
+  font-family: "Prompt", sans-serif;
+  color: #efefef;
+  font-weight: 800;
+}
+
+.form__input {
   border-color: rgb(43, 116, 252);
+}
+.form__input:focus {
+  border-color: rgb(242, 255, 129);
+  filter: drop-shadow(0 0 0.5rem #36a4da);
+}
+
+.form__feedback {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
 }
 
 /*

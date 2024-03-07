@@ -1,0 +1,104 @@
+// Fetches variables from the entire folder to use
+@use "../abstracts" as *;
+
+
+//Använd klasserna: button btn och button--färgen när du skapar en knapp
+//Exempel: <button class="button btn button--orange" type="submit">betala</button>
+
+
+.button {
+    &,
+    &:link,
+    &:visited {
+      text-transform: lowercase;
+      font-family: $prompt;
+      color: $aska;
+      font-weight: 800;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      padding: .7rem 3rem;
+      display: inline-block;
+      border-radius: 1rem;
+      transition: all 0.2s;
+      border-color: $aska;
+      border-width: 3px;
+    }
+  
+    &:hover {
+        transform: translateY(-1px);
+        background-color: $aska;
+      }
+
+
+    &:active {
+      transform: translateY(-1px);
+    }
+    
+ 
+    
+    &--orange {
+      background-color: $aperol; //byt till SB
+      border-color: $aperol;
+
+      &:hover {
+        transform: translateY(-1px);
+        color: $aska;
+  
+  
+        box-shadow: (0 0 1rem $aperol); //byt till SB
+        background-color: $aperol;
+  
+      }
+
+    }
+
+    &--pink {
+        background-color: $rosa-pantern; //byt till SB
+        border-color: $rosa-pantern;
+      
+
+      &:hover {
+        transform: translateY(-1px);
+        color: $aska;
+  
+  
+        box-shadow: (0 0 1rem $rosa-pantern); //byt till SB
+        background-color: $rosa-pantern;
+  
+      }
+    }
+
+    &--green {
+        background-color: $mojito; //byt till SB
+        border-color: $mojito;
+      
+
+      &:hover {
+        transform: translateY(-1px);
+        color: $aska;
+  
+  
+        box-shadow: (0 0 1rem $mojito); //byt till SB
+        background-color: $mojito;
+  
+      }
+    }
+
+    &--blue {
+        background-color: $isbjorn; //byt till SB
+        border-color: $isbjorn;
+      
+
+      &:hover {
+        transform: translateY(-1px);
+        color: $aska;
+  
+  
+        box-shadow: (0 0 1rem $isbjorn); //byt till SB
+        background-color: $isbjorn;
+  
+      }
+    }
+
+  }
+  
