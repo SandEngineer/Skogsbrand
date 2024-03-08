@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Confirmation</title>
     <link rel="icon" href="img/sb_ikon_sv.svg" />
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -14,11 +17,33 @@
     </header>
     <main>
       <div class="container">
-        <div class="brodtext" id="displayData"></div>
+        <div class="row align-items-center brodtext">
+          <!-- id="displayData" -->
+          <div class="col-4 offset-2">
+            <p class="rubrik">
+              Tack för din beställning <span class="brodtext">${formData.name}</span>
+            </p>
+            <p>Bokningsbekräftelse skickad till ${formData.email}</p>
+          </div>
+          <div class="col-3">
+            <p>
+              <span class="rubrik">Datum:</span> ${formData.date}<br />
+              <span class="rubrik">Antal biljetter:</span>
+              ${formData.tickets}<br />
+              <span class="rubrik">Förnamn:</span> ${formData.name}<br />
+              <span class="rubrik">Efternamn:</span> ${formData.lastname}<br />
+              <span class="rubrik">E-mail:</span>
+              ${formData.email}<br />
+              <span class="rubrik">Telefonnummer:</span> ${formData.phone}<br />
+              <span class="rubrik">Betalningsalternativ:</span>
+              ${formData.paymentOption}
+            </p>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>
-    <script src="js/confirmation.js"></script>
+    <script src="/js/confirmation.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
