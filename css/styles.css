@@ -213,6 +213,18 @@ This file is used to contain all scss imports.
 This file is used to contain all scss imports.
 @use the entire folder instead of having to @import every file individually
 */
+.list-group-item {
+  color: #efefef;
+  background-color: #101110;
+  border: none;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+}
+
+.rubrik--larger {
+  font-size: 2rem;
+}
+
 /*
 This file is used to contain all scss imports.
 @use the entire folder instead of having to @import every file individually
