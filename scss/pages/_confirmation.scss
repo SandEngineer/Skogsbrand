@@ -1,2 +1,18 @@
 // Fetches variables from the entire folder to use
 @use "../abstracts" as *;
+
+
+.list-group-item {
+    color: $aska;
+    background-color: $kol;
+    border: none;
+    font-size: .8rem;
+    padding: .2rem;
+
+}
+
+
+.rubrik--larger {
+    font-size: 2rem;
+
+}
