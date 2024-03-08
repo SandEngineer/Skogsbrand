@@ -18,6 +18,7 @@
     display: inline-block;
     border-radius: 1rem;
     transition: all 0.2s;
+    border-width: 3px;
   }
 
   &:hover {
@@ -30,7 +31,6 @@
 
   &--back {
     border-color: $aska;
-    border-width: 3px;
     &:hover {
       background-color: $aska;
     }
@@ -42,11 +42,9 @@
 
   &--orange {
     background-color: $aperol;
-
+    border-color: $aperol;
     &:hover {
-      transform: translateY(-1px);
       color: $aska;
-
       box-shadow: (0 0 1rem $aperol);
       background-color: $aperol;
     }
@@ -56,9 +54,7 @@
     background-color: $rosa-pantern;
 
     &:hover {
-      transform: translateY(-1px);
       color: $aska;
-
       box-shadow: (0 0 1rem $rosa-pantern);
       background-color: $rosa-pantern;
     }
@@ -68,9 +64,7 @@
     background-color: $mojito;
 
     &:hover {
-      transform: translateY(-1px);
       color: $aska;
-
       box-shadow: (0 0 1rem $mojito);
       background-color: $mojito;
     }
@@ -80,9 +74,7 @@
     background-color: $isbjorn;
 
     &:hover {
-      transform: translateY(-1px);
       color: $aska;
-
       box-shadow: (0 0 1rem $isbjorn);
       background-color: $isbjorn;
     }

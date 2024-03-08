@@ -19,10 +19,10 @@
         maiores sunt praesentium.
       </p>
     </header>
-    <main>
-      <div class="container">
+    <main class="container">
+      <div class="container my-5 bg-body-secondary bg-opacity-10 form-bg">
         <form
-          class="row g-3 row-cols-1 row-cols-sm-2 needs-validation"
+          class="row row-cols-1 row-cols-sm-2 p-lg-5 needs-validation"
           novalidate
         >
           <!-- Välja datum -->
@@ -58,14 +58,14 @@
             <div class="invalid-feedback form__feedback brodtext">Please select an amount.</div>
           </div>
           <!-- Förnamn -->
-          <div class="col">
+          <div class="col mt-3">
             <label for="userName" class="form-label rubrik">First Name</label>
             <input type="text" class="form-control form__input" id="userName" required />
             <div class="valid-feedback form__feedback brodtext">Looks good!</div>
             <div class="invalid-feedback form__feedback brodtext">Please enter your first name.</div>
           </div>
           <!-- Efternamn -->
-          <div class="col">
+          <div class="col mt-3">
             <label for="userLastname" class="form-label rubrik">Last Name</label>
             <input
               type="text"
@@ -78,7 +78,7 @@
             <div class="invalid-feedback form__feedback brodtext">Please enter your last name.</div>
           </div>
           <!-- E-mail  -->
-          <div class="col">
+          <div class="col mt-3">
             <label for="userEmail" class="form-label rubrik">E-mail</label>
             <input
               type="email"
@@ -93,7 +93,7 @@
             </div>
           </div>
           <!-- Telefonnummer  -->
-          <div class="col">
+          <div class="col mt-3">
             <label for="userPhone" class="form-label rubrik">Telephone number</label>
             <input
               type="tel"
@@ -106,8 +106,8 @@
             <div class="invalid-feedback form__feedback brodtext">Please provide a valid number.</div>
           </div>
           <!-- Betalning  -->
-          <div class="col">
-            <p class="rubrik">Betalningsalternativ</p>
+          <div class="col mt-3">
+            <div class="rubrik">Betalningsalternativ</div>
             <div class="form-check">
               <label for="swish" class="form-check-label rubrik"> Swish </label>
               <input
@@ -147,7 +147,7 @@
             <div class="invalid-feedback form__feedback brodtext">Please select a payment option.</div>
           </div>
           <!-- Terms and agrees  -->
-          <div class="col">
+          <div class="col mt-3 d-flex">
             <div class="form-check">
               <input
               class="form-check-input form__input"
@@ -165,17 +165,18 @@
               </div>
             </div>
           </div>
-          <div class="col">
+
+          <div class="col mt-3">
             <button class="btn button button--back" type="button" onclick="window.history.back()">go back</button>
           </div>
-          <div class="col">
+          <div class="col mt-3 d-flex justify-content-end">
             <button class="btn button button--orange" type="submit">betala</button>
           </div>
 
         </form>
       </div>
 
-      <script src="js/payment.js"></script>
+      <script src="/js/payment.js"></script>
       <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
     </main>
   </body>

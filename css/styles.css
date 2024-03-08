@@ -60,6 +60,7 @@ This file is used to contain all scss imports.
   display: inline-block;
   border-radius: 1rem;
   transition: all 0.2s;
+  border-width: 3px;
 }
 .button:hover {
   transform: translateY(-1px);
@@ -69,7 +70,6 @@ This file is used to contain all scss imports.
 }
 .button--back {
   border-color: #efefef;
-  border-width: 3px;
 }
 .button--back:hover {
   background-color: #efefef;
@@ -80,9 +80,9 @@ This file is used to contain all scss imports.
 }
 .button--orange {
   background-color: #ea652f;
+  border-color: #ea652f;
 }
 .button--orange:hover {
-  transform: translateY(-1px);
   color: #efefef;
   box-shadow: 0 0 1rem #ea652f;
   background-color: #ea652f;
@@ -91,7 +91,6 @@ This file is used to contain all scss imports.
   background-color: #e02e87;
 }
 .button--pink:hover {
-  transform: translateY(-1px);
   color: #efefef;
   box-shadow: 0 0 1rem #e02e87;
   background-color: #e02e87;
@@ -100,7 +99,6 @@ This file is used to contain all scss imports.
   background-color: #6bb239;
 }
 .button--green:hover {
-  transform: translateY(-1px);
   color: #efefef;
   box-shadow: 0 0 1rem #6bb239;
   background-color: #6bb239;
@@ -109,7 +107,6 @@ This file is used to contain all scss imports.
   background-color: #36a4da;
 }
 .button--blue:hover {
-  transform: translateY(-1px);
   color: #efefef;
   box-shadow: 0 0 1rem #36a4da;
   background-color: #36a4da;
@@ -137,6 +134,16 @@ This file is used to contain all scss imports.
 
 .form__feedback {
   font-size: 0.8rem;
+}
+.form__feedback.valid-feedback {
+  color: #198754;
+}
+.form__feedback.invalid-feedback {
+  color: #dc3545;
+}
+
+.form-bg {
+  border-radius: 10px;
 }
 
 /*
