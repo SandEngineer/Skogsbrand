@@ -127,13 +127,6 @@ This file is used to contain all scss imports.
 This file is used to contain all scss imports.
 @use the entire folder instead of having to @import every file individually
 */
-.form__label-text {
-  text-transform: lowercase;
-  font-family: "Prompt", sans-serif;
-  color: #efefef;
-  font-weight: 800;
-}
-
 .form__input {
   border-color: #36a4da;
 }
