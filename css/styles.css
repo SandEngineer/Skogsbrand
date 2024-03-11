@@ -116,6 +116,23 @@ This file is used to contain all scss imports.
 This file is used to contain all scss imports.
 @use the entire folder instead of having to @import every file individually
 */
+.card,
+.card-body {
+  background-color: #101110;
+}
+
+.card {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.cardholder {
+  transition: all 0.1s;
+}
+.cardholder:hover {
+  transform: translate(0, -3px);
+}
+
 /*
 This file is used to contain all scss imports.
 @use the entire folder instead of having to @import every file individually
@@ -307,6 +324,89 @@ This file is used to contain all Bootstrap imports.
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/helpers"; // importerar helpers så att vi kan stänga av dem
 @import "../../node_modules/bootstrap/scss/carousel"; */
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.card__image {
+  position: relative;
+  overflow: hidden; /* Förhindrar att gradienten rinner över containerkanterna */
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+.card__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(16, 17, 16) 100%);
+  pointer-events: none; /* Säkerställer att klick fortfarande fungerar på bilden under */
+}
+
+.card__border-orange {
+  background-clip: padding-box; /* !importanté */
+  border: solid 4px transparent; /* !importanté */
+  border-radius: 1em;
+}
+.card__border-orange:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -4px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: linear-gradient(to right, #ea652f, #e02e87);
+}
+.card__border-orange:hover {
+  box-shadow: 0 0 2rem #ea652f;
+}
+
+.card__border-green {
+  background-clip: padding-box; /* !importanté */
+  border: solid 4px transparent; /* !importanté */
+  border-radius: 1em;
+}
+.card__border-green:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -4px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: linear-gradient(to right, #6bb239, #36a4da);
+}
+.card__border-green:hover {
+  box-shadow: 0 0 2rem #6bb239;
+}
+
+.card__border-blue {
+  background-clip: padding-box; /* !importanté */
+  border: solid 4px transparent; /* !importanté */
+  border-radius: 1em;
+}
+.card__border-blue:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -4px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: linear-gradient(to right, #36a4da, #e02e87);
+}
+.card__border-blue:hover {
+  box-shadow: 0 0 2rem #36a4da;
+}
+
 /*
 This file is used to contain all scss imports.
 @use the entire folder instead of having to @import every file individually

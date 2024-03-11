@@ -1,2 +1,19 @@
 // Fetches variables from the entire folder to use
 @use "../abstracts" as *;
+
+.card,
+.card-body {
+  background-color: $kol;
+}
+
+.card {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.cardholder {
+    transition: all 0.1s;
+    &:hover {
+        transform: translate(0, -3px);
+    }
+}
