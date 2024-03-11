@@ -5,34 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Skogsbrand</title>
     <link rel="icon" href="img/sb_ikon_sv.svg" />
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="hero">
-      <video autoplay loop muted playsinline class="back-video">
-        <source src="/vid/skogsbrand_hero.mp4" type="video/mp4" />
-      </video>
-      <img src="/img/sb_logo_pink-li-orig.svg" alt="Skogsbrand Logotype" />
-    </div>
     <header>
-      <h1>Hello, world!</h1>
-      <p class="brodtext">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
-        doloribus laboriosam amet reprehenderit enim commodi quam, delectus,
-        harum nostrum, quas hic laborum quasi itaque beatae officiis impedit
-        maiores sunt praesentium.
-      </p>
+      <div class="hero">
+        <video autoplay loop muted playsinline class="back-video">
+          <source src="/vid/skogsbrand_hero.mp4" type="video/mp4" />
+        </video>
+        <img
+          src="/img/sb_logo_pink-li-orig.svg"
+          alt="Skogsbrand Logotype"
+          class="container"
+        />
+      </div>
+      <section class="container row offset-3 col-6 p-5 justify-content-center">
+        <div>
+          <h1>welcome to skogsbrand</h1>
+          <p class="brodtext">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+            doloribus laboriosam amet reprehenderit enim commodi quam, delectus,
+            harum nostrum, quas hic laborum quasi itaque beatae officiis impedit
+            maiores sunt praesentium. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Adipisci doloribus laboriosam amet reprehenderit
+            enim commodi quam, delectus, harum nostrum, quas hic laborum quasi
+            itaque beatae officiis impedit maiores sunt praesentium.
+          </p>
+        </div>
+        <div class="mt-3 d-flex justify-content-center">
+          <button
+            class="btn button button--green"
+            type="button"
+            onclick="window.location.href='booking.html'"
+          >
+            get tickets now
+          </button>
+        </div>
+      </section>
     </header>
     <main>
-      <section class="container">
-        <p class="brodtext">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
-          doloribus laboriosam amet reprehenderit enim commodi quam, delectus,
-          harum nostrum, quas hic laborum quasi itaque beatae officiis impedit
-          maiores sunt praesentium.
-        </p>
-        <button class="button btn button--green" type="submit">explore more</button>
+      <section class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-center">
+          <div class="cardholder col d-flex justify-content-center" style="width: 18rem">
+            <div class="card card__border-orange">
+              <div class="card__image">
+                <img
+                  src="/img/pexels-annam-w-1047442.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body m-1 p-4">
+                <h5 class="card-title rubrik">Card title</h5>
+                <p class="card-text brodtext">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cardholder col d-flex justify-content-center" style="width: 18rem">
+            <div class="card card__border-green">
+              <div class="card__image">
+                <img
+                  src="/img/pexels-annam-w-1047442.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body m-1 p-4">
+                <h5 class="card-title rubrik">Card title</h5>
+                <p class="card-text brodtext">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cardholder col d-flex justify-content-center" style="width: 18rem">
+            <div class="card card__border-blue">
+              <div class="card__image">
+                <img
+                  src="/img/pexels-annam-w-1047442.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body m-1 p-4">
+                <h5 class="card-title rubrik">Card title</h5>
+                <p class="card-text brodtext">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <div class="container">
         <div id="carouselExample" class="carousel slide">
