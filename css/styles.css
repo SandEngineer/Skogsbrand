@@ -145,6 +145,9 @@ This file is used to contain all scss imports.
 .form-bg {
   border-radius: 10px;
 }
+.form-bg--black {
+  background-color: #101110;
+}
 
 /*
 This file is used to contain all layout imports.
@@ -215,7 +218,7 @@ This file is used to contain all scss imports.
 */
 .list-group-item {
   color: #efefef;
-  background-color: #101110;
+  background-color: rgba(255, 0, 0, 0);
   border: none;
   font-size: 0.8rem;
   padding: 0.2rem;
@@ -223,6 +226,21 @@ This file is used to contain all scss imports.
 
 .rubrik--larger {
   font-size: 2rem;
+}
+
+.confirm-img {
+  height: 100vh;
+  background-image: linear-gradient(to top, rgb(16, 17, 16) 0%, rgba(16, 17, 16, 0.5) 80%, rgba(16, 17, 16, 0.1) 100%), url(/img/stagedive.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-bottom: 15rem;
+}
+.confirm-img__text {
+  position: absolute;
+  /*       top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
 }
 
 /*
