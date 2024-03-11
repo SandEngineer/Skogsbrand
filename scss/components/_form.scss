@@ -28,4 +28,9 @@
 
 .form-bg {
   border-radius: 10px;
+
+  &--black {
+    background-color: $kol;
+  }
+
 }

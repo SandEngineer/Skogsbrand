@@ -12,53 +12,66 @@
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>confirmation</h1>
-    </header>
+    <header></header>
     <main>
-      <div class="container">
-        <div class="d-flex justify-content-center">
-          <img src="img/sb_logo_pink-li-orig.svg" width="40%" class="" alt="" />
-        </div>
-        <div class="brodtext">
-          <!-- id="displayData" -->
-          <div class="rubrik row g-3 row-cols-1 text-center">
-            <p class="col rubrik--larger">Hej ${formData.name}</p>
-            <p class="brodtext col">
-              Tack för din beställning. En orderbekräftelse är skickad till
-              ${formData.email}
-            </p>
-          </div>
 
-          <ul class="list-group row row-cols-1 offset-md-3">
-            <li class="list-group-item">
-              Bokningsinformation:
-            </li>
-            <li class="list-group-item">
-              <span class="brodtext">Förnamn: </span>${formData.name}
-            </li>
-            <li class="list-group-item">
-              <span class="brodtext">Efternamn: </span>${formData.lastname}
-            </li>
-            <li class="list-group-item">
-              <span class="brodtext">Telefonnummer: </span>${formData.phone}
-            </li>
-            <li class="list-group-item">
-              <span class="brodtext">Email: </span>${formData.email}
-            </li>
-          </ul>
-        </div>
-        
-        <div class="col mt-5 d-flex justify-content-center">
-          <button
-            class="btn button button--blue"
-            type="button"
-            onclick="window.location.href='confirmation.html'"
-          >
-            take me back
-          </button>
+<!--       <div class="d-flex justify-content-center">
+        <img src="img/stagedive.jpg" class="img-fluid" alt="" />
+      </div> -->
+<!--       <h1>confirmation</h1>
+      <div class="hero-img">
+        <img src="img/stagedive.jpg" class="img-fluid back-img" alt="" />
+        <img src="/img/sb_logo_pink-li-orig.svg" width="50%" alt="Skogsbrand Logotype" />
+      </div> -->
+
+<!-- Under konstruktion. Problem med att centrera saker -->
+
+      <div class="confirm-img">
+        <div class="confirm-img__text">
+          <img src="/img/sb_logo_pink-li-orig.svg" width="50%" alt="Skogsbrand Logotype" />
+          <div class="container form-bg form-bg--black py-5 ">
+            <div class="brodtext">
+              <!-- id="displayData" -->
+              <div class="rubrik row g-3 row-cols-1">
+                <p class="col rubrik--larger">Hej ${formData.name}</p>
+                <p class="brodtext col">
+                  Tack för din beställning. En orderbekräftelse är skickad till
+                  ${formData.email}
+                </p>
+              </div>
+    
+              <ul class="list-group row row-cols-1">
+                <li class="list-group-item">Bokningsinformation:</li>
+                <li class="list-group-item">
+                  <span class="brodtext">Förnamn: </span>${formData.name}
+                </li>
+                <li class="list-group-item">
+                  <span class="brodtext">Efternamn: </span>${formData.lastname}
+                </li>
+                <li class="list-group-item">
+                  <span class="brodtext">Telefonnummer: </span>${formData.phone}
+                </li>
+                <li class="list-group-item">
+                  <span class="brodtext">Email: </span>${formData.email}
+                </li>
+              </ul>
+            </div>
+    
+            <div class="col mt-5 d-flex justify-content-center">
+              <button
+                class="btn button button--blue"
+                type="button"
+                onclick="window.location.href='confirmation.html'"
+              >
+                take me back
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+
+
+
     </main>
     <footer></footer>
     <script src="/js/confirmation.js"></script>
