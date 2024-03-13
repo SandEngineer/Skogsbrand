@@ -7,13 +7,50 @@
 }
 
 .card {
-    padding-right: 0;
-    padding-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .cardholder {
-    transition: all 0.1s;
-    &:hover {
-        transform: translate(0, -3px);
-    }
+  transition: all 0.1s;
+  max-width: 18rem;
+  &:hover {
+    transform: translate(0, -3px);
+  }
+}
+
+.bigcard__bg {
+  background-size: contain 100%; // Begränsa till storleken på containern
+  background-repeat: no-repeat; // Stänga av repeterande mönster
+  &--right {
+    background-image: url("/img/card_background_pink.svg");
+    background-position: right; // Basically som "justify-end"
+  }
+  &--left {
+    background-image: url("/img/card_background_orange.svg");
+    background-position: left; //Basically som "justify-start"
+  }
+}
+
+.bigcard__cont {
+  position: relative;
+  width: 80vw;
+  height: 40vh;
+  background-color: $kol;
+}
+.bigcard__outline {
+  position: absolute;
+  top: -3.5rem;
+  z-index: -1;
+  height: 50vh;
+  width: 60vw;
+  background-clip: padding-box;
+  border: 0.5rem solid $rosa-pantern;
+  border-right: none;
+  border-radius: 15rem 0 0 0;
+}
+.bigcard {
+  border: none;
+  width: 70%;
+  height: 70%;
 }
