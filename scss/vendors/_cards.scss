@@ -4,7 +4,7 @@
 .card__image { // svart gradient för att blenda mot bakgrundsfärgen
     position: relative;
     overflow: hidden; /* Förhindrar att gradienten rinner över containerkanterna */
-    border-radius: 0.8rem 0.8rem 0 0;
+    border-radius: 0.7rem 0.7rem 0 0;
   
     &::after {
       content: "";
@@ -57,7 +57,7 @@ $border: 4px;
       z-index: -1;
       margin: -$border; /* !importanté */
       border-radius: inherit; /* !importanté */
-      background: linear-gradient(to right, $mojito, $isbjorn);
+      background: linear-gradient(to right, $isbjorn, $mojito);
     }
 
     &:hover {
@@ -65,7 +65,7 @@ $border: 4px;
     }
 }
 
-.card__border-blue {
+.card__border-pink {
     background-clip: padding-box; /* !importanté */
     border: solid $border transparent; /* !importanté */
     border-radius: 1em;
@@ -77,10 +77,30 @@ $border: 4px;
       z-index: -1;
       margin: -$border; /* !importanté */
       border-radius: inherit; /* !importanté */
-      background: linear-gradient(to right, $isbjorn, $rosa-pantern);
+      background: linear-gradient(to right, $rosa-pantern, $isbjorn);
     }
 
     &:hover {
       box-shadow: (0 0 2rem $isbjorn);
     }
+}
+
+.card__border-blue {
+  background-clip: padding-box; /* !importanté */
+  border: solid $border transparent; /* !importanté */
+  border-radius: 1em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(to right, $rosa-pantern, $isbjorn);
+  }
+
+  &:hover {
+    box-shadow: (0 0 2rem $isbjorn);
+  }
 }
