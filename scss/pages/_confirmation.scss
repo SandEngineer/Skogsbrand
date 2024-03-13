@@ -6,7 +6,6 @@
     color: $aska;
     background-color: rgba(255, 0, 0, 0);
     border: none;
-    font-size: .8rem;
     padding: .2rem;
 
 }
@@ -18,23 +17,22 @@
 }
 
 //motsvarar header från Udemy
-.confirm-img {
+/* .confirm-img {
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(16,17,16,1) 0%,rgba(16,17,16,0.5) 80%,rgba(16,17,16,0.1) 100%
+    background-image: linear-gradient(to top, rgb(40, 102, 40) 0%,rgba(95, 209, 95, 0.5) 80%,rgba(85, 129, 85, 0.1) 100%
       ),
       url(/img/stagedive.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
-    margin-bottom: 15rem;
   
     &__text {
       position: absolute;
-/*       top: 40%;
+      top: 40%;
       left: 50%;
-      transform: translate(-50%, -50%); */
+      transform: translate(-50%, -50%);
 
     }
-  }
+  } */
 
   
