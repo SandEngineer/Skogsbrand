@@ -12,36 +12,33 @@
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header></header>
-    <main>
-
-<!--       <div class="d-flex justify-content-center">
-        <img src="img/stagedive.jpg" class="img-fluid" alt="" />
-      </div> -->
-<!--       <h1>confirmation</h1>
-      <div class="hero-img">
-        <img src="img/stagedive.jpg" class="img-fluid back-img" alt="" />
-        <img src="/img/sb_logo_pink-li-orig.svg" width="50%" alt="Skogsbrand Logotype" />
-      </div> -->
-
+    <header>
+      <div class="hero-pic">
+        <img src="img/stagedive.jpg" class="img-fluid back-pic" alt="" />
+        <img src="/img/sb_logo_pink-li-orig.svg" width="50%" alt="Skogsbrand Logotype" class="container" />
+      </div>
+    </header>
+    <main class="container">
 <!-- Under konstruktion. Problem med att centrera saker -->
-
-      <div class="confirm-img">
-        <div class="confirm-img__text">
-          <img src="/img/sb_logo_pink-li-orig.svg" width="50%" alt="Skogsbrand Logotype" />
-          <div class="container form-bg form-bg--black py-5 ">
+          <div class="container bg-body-secondary bg-opacity-10 form-bg pb-5 pt-4 ">
             <div class="brodtext">
               <!-- id="displayData" -->
-              <div class="rubrik row g-3 row-cols-1">
-                <p class="col rubrik--larger">Hej ${formData.name}</p>
-                <p class="brodtext col">
+              <div class="rubrik row row-cols-1 text-center">
+                <p class="col fs-3">Hej ${formData.name}</p>
+                <p class="brodtext fs-6 col">
                   Tack för din beställning. En orderbekräftelse är skickad till
                   ${formData.email}
                 </p>
               </div>
     
-              <ul class="list-group row row-cols-1">
-                <li class="list-group-item">Bokningsinformation:</li>
+              <ul class="list-group offset-md-1 pt-3 fs-6">
+                <li class="list-group-item rubrik">Bokningsinformation:</li>
+                <li class="list-group-item">
+                  <span class="brodtext">Antal biljetter: </span>${formData.tickets}
+                </li>
+                <li class="list-group-item">
+                  <span class="brodtext">Datum: </span>${formData.date}
+                </li>
                 <li class="list-group-item">
                   <span class="brodtext">Förnamn: </span>${formData.name}
                 </li>
@@ -67,13 +64,11 @@
               </button>
             </div>
           </div>
-        </div>
-      </div>
 
 
 
     </main>
-    <footer></footer>
+    <footer><h2>hello</h2></footer>
     <script src="/js/confirmation.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
