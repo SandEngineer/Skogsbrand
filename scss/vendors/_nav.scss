@@ -1,0 +1,69 @@
+@use "../abstracts" as *;
+
+.navbar-right {
+    background-color: $kol;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 5vw;
+    border: 2px solid salmon;
+}
+
+
+/* Hamburger meny */
+  .menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $aska;
+    position: absolute;
+    top: 2rem;
+  }
+  
+  .menu-text {
+    color: $aska;
+  }
+
+
+/* Overlay meny */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: $kol;
+    background-color: $kol;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: $aska;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, 
+  .overlay a:focus {
+    text-shadow: 0 0 1rem $aska;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 2rem;
+    right: 45px;
+    font-size: 60px;
+  }
