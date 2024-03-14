@@ -3,6 +3,7 @@
 
 .card,
 .card-body {
+  border: none;
   background-color: $kol;
 }
 
@@ -11,46 +12,82 @@
   padding-left: 0;
 }
 
+// Extra container för att transform ska funka på hela innehållet, inte varje del för sig
 .cardholder {
   transition: all 0.1s;
+  min-width: 10rem;
   max-width: 18rem;
   &:hover {
     transform: translate(0, -3px);
   }
 }
 
-.bigcard__bg {
-  background-size: contain 100%; // Begränsa till storleken på containern
-  background-repeat: no-repeat; // Stänga av repeterande mönster
-  &--right {
-    background-image: url("/img/card_background_pink.svg");
-    background-position: right; // Basically som "justify-end"
-  }
-  &--left {
-    background-image: url("/img/card_background_orange.svg");
-    background-position: left; //Basically som "justify-start"
-  }
+// Stora cardets container
+.bigcard__cont {
+  position: relative; // För att borderns absolute ska funka
 }
 
-.bigcard__cont {
-  position: relative;
-  width: 80vw;
-  height: 40vh;
-  background-color: $kol;
-}
+// Backbordern för stora card
 .bigcard__outline {
   position: absolute;
-  top: -3.5rem;
+  top: -5rem;
   z-index: -1;
-  height: 50vh;
-  width: 60vw;
-  background-clip: padding-box;
-  border: 0.5rem solid $rosa-pantern;
-  border-right: none;
-  border-radius: 15rem 0 0 0;
-}
-.bigcard {
-  border: none;
+  height: 130%;
   width: 70%;
-  height: 70%;
+  background-clip: padding-box;
+  border-width: 0.5rem;
+  border-style: solid; 
+  // Högerjusterad rundad topp
+  &--rightt {
+    border-right: none;
+    border-radius: 15rem 0 0 0;
+  }
+  // Högerjusterad rundad botten
+  &--rightb {
+    border-right: none;
+    border-radius: 0 0 15rem 0;
+  }
+  // Vänsterjusterad rundad topp
+  &--leftt {
+    border-left: none;
+    border-radius: 15rem 0 0 0;
+  }
+  // Vänsterjusterad rundad botten
+  &--leftb {
+    border-left: none;
+    border-radius: 0 0 15rem 0;
+  }
+  // Profilfärger
+  &--orange {
+    border-color: $aperol;
+  }
+  &--pink {
+    border-color: $rosa-pantern;
+  }
+  &--blue {
+    border-color: $isbjorn;
+  }
+  &--green {
+    border-color: $mojito;
+  }
+  // Custom scaling för att den ska hålla sig relativt relativ mot cardets storlek
+  // Använder Bootstrap-brytpunkter
+  @media (max-width: 1400px) {
+    height: 132%;
+    width: 70%;
+  }
+  @media (max-width: 1200px) {
+    height: 130%;
+  }
+  @media (max-width: 992px) {
+    height: 130%;
+    width: 75%;
+  }
+  @media (max-width: 768px) {
+    height: 115%;
+    width: 60%;
+  }
+  @media (max-width: 576px) {
+    width: 70%;
+  }
 }

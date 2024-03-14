@@ -45,26 +45,6 @@ $border: 4px;
     }
 }
 
-.card__border-green {
-    background-clip: padding-box; /* !importanté */
-    border: solid $border transparent; /* !importanté */
-    border-radius: 1em;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -1;
-      margin: -$border; /* !importanté */
-      border-radius: inherit; /* !importanté */
-      background: linear-gradient(to right, $isbjorn, $mojito);
-    }
-
-    &:hover {
-      box-shadow: (0 0 2rem $mojito);
-    }
-}
-
 .card__border-pink {
     background-clip: padding-box; /* !importanté */
     border: solid $border transparent; /* !importanté */
@@ -81,11 +61,31 @@ $border: 4px;
     }
 
     &:hover {
-      box-shadow: (0 0 2rem $isbjorn);
+      box-shadow: (0 0 2rem $rosa-pantern);
     }
 }
 
 .card__border-blue {
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    border-radius: 1em;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -$border; /* !importanté */
+      border-radius: inherit; /* !importanté */
+      background: linear-gradient(to right, $isbjorn, $mojito);
+    }
+
+    &:hover {
+      box-shadow: (0 0 2rem $isbjorn);
+    }
+}
+
+.card__border-green {
   background-clip: padding-box; /* !importanté */
   border: solid $border transparent; /* !importanté */
   border-radius: 1em;
@@ -97,10 +97,10 @@ $border: 4px;
     z-index: -1;
     margin: -$border; /* !importanté */
     border-radius: inherit; /* !importanté */
-    background: linear-gradient(to right, $rosa-pantern, $isbjorn);
+    background: linear-gradient(to right, $mojito, $aperol);
   }
 
   &:hover {
-    box-shadow: (0 0 2rem $isbjorn);
+    box-shadow: (0 0 2rem $mojito);
   }
 }

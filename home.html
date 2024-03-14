@@ -82,10 +82,10 @@
       <section class="container my-5">
         <!-- Container för raden om tre cards -->
         <div
-          class="row row-cols-sm-2 row-cols-lg-3 d-flex justify-content-center"
+          class="row row-cols-1 row-cols-md-3 justify-content-center"
         >
           <!-- Korthållare för att transform ska funka -->
-          <div class="cardholder d-flex justify-content-center m-3">
+          <div class="col cardholder mt-3 m-lg-3">
             <!-- Cardet -->
             <div class="card card__border-orange">
               <!-- Bild -->
@@ -97,7 +97,7 @@
                 />
               </div>
               <!-- Body med text -->
-              <div class="card-body m-1 p-4">
+              <div class="card-body m-1 p-md-4">
                 <h5 class="card-title rubrik">Card title</h5>
                 <p class="card-text brodtext">
                   Some quick example text to build on the card title and make up
@@ -107,7 +107,7 @@
             </div>
           </div>
           <!-- Korthållare för att transform ska funka -->
-          <div class="cardholder d-flex justify-content-center m-3">
+          <div class="col cardholder mt-3 m-lg-3">
             <!-- Cardet -->
             <div class="card card__border-pink">
               <!-- Bild -->
@@ -119,7 +119,7 @@
                 />
               </div>
               <!-- Body med text -->
-              <div class="card-body m-1 p-4">
+              <div class="card-body m-1 p-md-4">
                 <h5 class="card-title rubrik">Card title</h5>
                 <p class="card-text brodtext">
                   Some quick example text to build on the card title and make up
@@ -129,9 +129,9 @@
             </div>
           </div>
           <!-- Korthållare för att transform ska funka -->
-          <div class="cardholder d-flex justify-content-center m-3">
+          <div class="col cardholder mt-3 m-lg-3">
             <!-- Cardet -->
-            <div class="card card__border-green">
+            <div class="card card__border-blue">
               <!-- Bild -->
               <div class="card__image">
                 <img
@@ -141,7 +141,7 @@
                 />
               </div>
               <!-- Body med text -->
-              <div class="card-body m-1 p-4">
+              <div class="card-body m-1 p-md-4">
                 <h5 class="card-title rubrik">Card title</h5>
                 <p class="card-text brodtext">
                   Some quick example text to build on the card title and make up
@@ -154,81 +154,92 @@
       </section>
       <!-- Sektion av stora cards -->
       <section class="my-5 py-5">
-        <!-- Yttercontainer för att justera cardet höger-vänster -->
-        <div class="row d-flex justify-content-end py-5">
-          <!-- Stort card -->
-          <div class="row bigcard__cont d-flex justify-content-end">
+
+        <!-- HÖGERCARD Yttercontainer för att justera cardet -->
+        <div class="my-5 py-5">
+          <!-- Card container -->
+          <div class="row g-5 bigcard__cont justify-content-end">
             <!-- Outlinen -->
-            <div class="row bigcard__outline"></div>
-            <!-- Bild -->
-            <div class="col-md-6 d-flex align-content-center">
-              <img
-                src="/img/pexels-annam-w-1047442.jpg"
-                class="img-fluid rounded-1"
-                alt="..."
-              />
-            </div>
-            <!-- Body med text -->
-            <div class="col-md-6 ps-md-5">
-              <div class="card-body">
-                <h2 class="card-title rubrik mt-3 mt-md-0">Card title</h2>
-                <p class="card-text brodtext">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-                  quidem officia! Architecto non aspernatur hic numquam libero
-                  reprehenderit a sint, illo culpa totam nulla, ullam aliquid
-                  magnam porro quae quaerat.
-                </p>
-                <button
-                  class="btn button button--pink mt-3 mt-md-5"
-                  type="button"
-                  onclick="window.location.href='booking.html'"
-                >
-                  explore more
-                </button>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-        <!-- Container för att justera cardet höger-vänster -->
-        <div
-          class="row d-flex align-content-center my-5 p-md-5 bigcard__bg bigcard__bg--left"
-        >
-          <!-- Stort card -->
-          <div class="card bigcard">
-            <div class="row g-0 d-flex justify-content-end">
-              <!-- Body med text -->
-              <div class="col-md-5 pe-md-5">
-                <div class="card-body">
-                  <h2 class="card-title rubrik">Card title</h2>
-                  <p class="card-text brodtext">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Amet, accusamus ipsam perferendis consequatur obcaecati
-                    expedita ipsa autem asperiores fugit, similique ducimus sed
-                    tenetur. Sequi voluptas voluptatem facilis, reprehenderit
-                    inventore laudantium.
-                  </p>
-                  <button
-                    class="btn button button--orange mt-5"
-                    type="button"
-                    onclick="window.location.href='booking.html'"
-                  >
-                    explore more
-                  </button>
+            <div class="bigcard__outline bigcard__outline--rightt bigcard__outline--pink"></div>
+            <!-- Stort card -->
+            <div class="card">
+              <div class="row justify-content-center">
+                <!-- Bild -->
+                <div class="col-10 col-sm-7 col-md-5 col-lg-4 d-md-flex align-items-md-center">
+                  <img
+                    src="/img/pexels-annam-w-1047442.jpg"
+                    class="card-img img-fluid rounded-1"
+                    alt="..."
+                  />
+                </div>
+                <!-- Body med text -->
+                <div class="col-10 col-sm-7 col-md-5 col-lg-4 ps-md-5 d-md-flex align-items-md-center">
+                  <div class="card-body">
+                    <h2 class="card-title rubrik mt-3 mt-md-0">Card title</h2>
+                    <p class="card-text brodtext">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                      quidem officia! Architecto non aspernatur hic numquam libero
+                      reprehenderit a sint, illo culpa totam nulla, ullam aliquid
+                      magnam porro quae quaerat.
+                    </p>
+                    <button
+                      class="btn button button--pink mt-3 mt-md-5"
+                      type="button"
+                      onclick="window.location.href='booking.html'"
+                    >
+                      explore more
+                    </button>
+                  </div>
                 </div>
               </div>
-              <!-- Bild -->
-              <div class="col-md-5 d-flex align-content-center">
-                <img
-                  src="/img/pexels-annam-w-1047442.jpg"
-                  class="img-fluid rounded-1"
-                  alt="..."
-                />
-              </div>
+            </div>
             </div>
           </div>
         </div>
-      </section>
+
+        <div class="divider"></div>
+
+        <!-- VÄNSTERCARD Yttercontainer för att justera cardet -->
+        <div class="my-5 py-5">
+          <!-- Card container -->
+          <div class="row g-5 bigcard__cont justify-content-start">
+            <!-- Outlinen -->
+            <div class="bigcard__outline bigcard__outline--leftb bigcard__outline--orange"></div>
+            <!-- Stort card -->
+            <div class="card bigcard__color">
+              <div class="row justify-content-center">
+                <!-- Body med text -->
+                <div class="col-10 col-sm-7 col-md-5 col-lg-4 ps-md-5 d-md-flex align-items-md-center">
+                  <div class="card-body">
+                    <h2 class="card-title rubrik mt-3 mt-md-0">Card title</h2>
+                    <p class="card-text brodtext">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                      quidem officia! Architecto non aspernatur hic numquam libero
+                      reprehenderit a sint, illo culpa totam nulla, ullam aliquid
+                      magnam porro quae quaerat.
+                    </p>
+                    <button
+                      class="btn button button--pink mt-3 mt-md-5"
+                      type="button"
+                      onclick="window.location.href='booking.html'"
+                    >
+                      explore more
+                    </button>
+                  </div>
+                </div>
+                <!-- Bild -->
+                <div class="col-10 col-sm-7 col-md-5 col-lg-4 d-md-flex align-items-md-center">
+                  <img
+                    src="/img/pexels-annam-w-1047442.jpg"
+                    class="card-img img-fluid rounded-1"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
 
       <div class="container">
         <div id="carouselExample" class="carousel slide">
@@ -263,6 +274,7 @@
           </button>
         </div>
       </div>
+
     </main>
     <footer></footer>
     <script src="/js/nav.js"></script>
