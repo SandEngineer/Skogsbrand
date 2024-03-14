@@ -12,6 +12,37 @@
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
   <body>
+    <nav>
+      <!-- Nav för lg-skärm -->
+      <div class="navbar-right d-none d-md-block">
+        <div class="menu-toggle" onclick="openNav()">
+          <img src="img/hamburger.svg" width="50%" class="" alt="" />
+          <p class="menu-text rubrik">menu</p>
+        </div>
+        <div class="rightside-border"></div>
+      </div>
+
+      <!-- nav för små skärmar -->
+
+      <!-- Navbar -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content rubrik">
+          <div
+            class="row row-cols-1 row-cols-lg-6 justify-content-lg-center gap-1 gap-lg-0"
+          >
+            <a class="col-md-auto" href="home.html">home</a>
+            <a class="col-md-auto" href="activities.html">activities</a>
+            <a class="col-md-auto" href="booking.html">tickets</a>
+            <a class="col-md-auto" href="map.html">map</a>
+            <a class="col-md-auto" href="area.html">area</a>
+            <a class="col-md-auto" href="about.html">about us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <header>
       <div class="hero">
         <video autoplay loop muted playsinline class="back-video">
@@ -246,6 +277,7 @@
 
     </main>
     <footer></footer>
+    <script src="/js/nav.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
