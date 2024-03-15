@@ -2,7 +2,7 @@
 /*MIXIN & IF-CONDITIONS*/
 
 @mixin respond($breakpoint) {
-    @if $breakpoint == xsm {
+    @if $breakpoint == xs {
         @media (max-width: 576px) { @content }
     }
 

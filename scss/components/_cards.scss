@@ -80,22 +80,22 @@
   }
   // Custom scaling för att den ska hålla sig relativt relativ mot cardets storlek
   // Använder Bootstrap-brytpunkter
-  @media (max-width: 1400px) {
+  @include respond(xl) {
     height: 132%;
     width: 70%;
   }
-  @media (max-width: 1200px) {
+  @include respond(lg) {
     height: 130%;
   }
-  @media (max-width: 992px) {
+  @include respond(md) {
     height: 130%;
     width: 75%;
   }
-  @media (max-width: 768px) {
+  @include respond(sm) {
     height: 115%;
     width: 60%;
   }
-  @media (max-width: 576px) {
+  @include respond(xs) {
     width: 70%;
   }
 }

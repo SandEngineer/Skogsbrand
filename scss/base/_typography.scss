@@ -12,11 +12,19 @@ h6, h5, h4, h3, h2, h1, .rubrik {
     }
 }
 
+// Sätta svart textfärg
 .font-black {
     color: $kol;
+
+    // MQ för att byta tillbaka till vit
+    &--lg {
+        @include respond(lg) {
+            color: $aska;
+        }
+    }
 }
 
-.brodtext {
+p, .brodtext {
     font-family: $noto-sans;
     font-weight: 400;
     color: $aska;
