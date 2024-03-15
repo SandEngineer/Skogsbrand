@@ -1,5 +1,5 @@
 # Ignore the node_modules folder, i.e. Bootstrap
 # Ignore the css folder because it gets regenerated every time we launch the live compiler and avoids merge conflicts
 node_modules/
-css/styles.css
-css/styles.css.map
+.vscode/
+css/

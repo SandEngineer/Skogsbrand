@@ -81,13 +81,11 @@
       <!-- Sektion av cards -->
       <section class="container my-5">
         <!-- Container för raden om tre cards -->
-        <div
-          class="row row-cols-1 row-cols-md-3 justify-content-center"
-        >
+        <div class="row row-cols-1 row-cols-md-3 justify-content-center">
           <!-- Korthållare för att transform ska funka -->
           <div class="col cardholder mt-3 m-lg-3">
             <!-- Cardet -->
-            <div class="card card__border-orange">
+            <div class="card card__bg--black card__border-orange">
               <!-- Bild -->
               <div class="card__image">
                 <img
@@ -106,10 +104,11 @@
               </div>
             </div>
           </div>
+
           <!-- Korthållare för att transform ska funka -->
           <div class="col cardholder mt-3 m-lg-3">
             <!-- Cardet -->
-            <div class="card card__border-pink">
+            <div class="card card__bg--black card__border-pink">
               <!-- Bild -->
               <div class="card__image">
                 <img
@@ -128,10 +127,11 @@
               </div>
             </div>
           </div>
+
           <!-- Korthållare för att transform ska funka -->
           <div class="col cardholder mt-3 m-lg-3">
             <!-- Cardet -->
-            <div class="card card__border-blue">
+            <div class="card card__bg--black card__border-blue">
               <!-- Bild -->
               <div class="card__image">
                 <img
@@ -152,35 +152,43 @@
           </div>
         </div>
       </section>
+
       <!-- Sektion av stora cards -->
       <section class="my-5 py-5">
-
         <!-- HÖGERCARD Yttercontainer för att justera cardet -->
         <div class="my-5 py-5">
           <!-- Card container -->
-          <div class="row g-5 bigcard__cont justify-content-end">
+          <div
+            class="row g-5 bigcard__cont justify-content-end me-0"
+          >
             <!-- Outlinen -->
-            <div class="bigcard__outline bigcard__outline--rightt bigcard__outline--pink"></div>
+            <div
+              class="bigcard__outline bigcard__outline--right-top bigcard__outline--pink"
+            ></div>
             <!-- Stort card -->
-            <div class="card">
-              <div class="row justify-content-center">
+            <div class="card bg-transparent">
+              <div class="row g-0 justify-content-center me-0">
                 <!-- Bild -->
-                <div class="col-10 col-sm-7 col-md-5 col-lg-4 d-md-flex align-items-md-center">
+                <div
+                  class="col-10 col-sm-6 col-md-5 col-lg-4 d-md-flex align-items-md-center"
+                >
                   <img
                     src="/img/pexels-annam-w-1047442.jpg"
-                    class="card-img img-fluid rounded-1"
+                    class="card-img img-fluid rounded-3"
                     alt="..."
                   />
                 </div>
                 <!-- Body med text -->
-                <div class="col-10 col-sm-7 col-md-5 col-lg-4 ps-md-5 d-md-flex align-items-md-center">
+                <div
+                  class="col-10 col-sm-6 col-md-5 col-lg-4 ps-md-5 d-md-flex align-items-md-center"
+                >
                   <div class="card-body">
                     <h2 class="card-title rubrik mt-3 mt-md-0">Card title</h2>
                     <p class="card-text brodtext">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-                      quidem officia! Architecto non aspernatur hic numquam libero
-                      reprehenderit a sint, illo culpa totam nulla, ullam aliquid
-                      magnam porro quae quaerat.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aut, quidem officia! Architecto non aspernatur hic numquam
+                      libero reprehenderit a sint, illo culpa totam nulla, ullam
+                      aliquid magnam porro quae quaerat.
                     </p>
                     <button
                       class="btn button button--pink mt-3 mt-md-5"
@@ -192,7 +200,6 @@
                   </div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -202,24 +209,28 @@
         <!-- VÄNSTERCARD Yttercontainer för att justera cardet -->
         <div class="my-5 py-5">
           <!-- Card container -->
-          <div class="row g-5 bigcard__cont justify-content-start">
+          <div class="row g-5 bigcard__cont justify-content-start me-0">
             <!-- Outlinen -->
-            <div class="bigcard__outline bigcard__outline--leftb bigcard__outline--orange"></div>
+            <div
+              class="bigcard__outline bigcard__outline--left-bottom bigcard__outline--orange"
+            ></div>
             <!-- Stort card -->
-            <div class="card bigcard__color">
-              <div class="row justify-content-center">
+            <div class="card bg-transparent">
+              <div class="row justify-content-center me-0">
                 <!-- Body med text -->
-                <div class="col-10 col-sm-7 col-md-5 col-lg-4 ps-md-5 d-md-flex align-items-md-center">
+                <div
+                  class="col-10 col-sm-7 col-md-5 col-lg-4 ps-md-5 d-md-flex align-items-md-center"
+                >
                   <div class="card-body">
                     <h2 class="card-title rubrik mt-3 mt-md-0">Card title</h2>
                     <p class="card-text brodtext">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-                      quidem officia! Architecto non aspernatur hic numquam libero
-                      reprehenderit a sint, illo culpa totam nulla, ullam aliquid
-                      magnam porro quae quaerat.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aut, quidem officia! Architecto non aspernatur hic numquam
+                      libero reprehenderit a sint, illo culpa totam nulla, ullam
+                      aliquid magnam porro quae quaerat.
                     </p>
                     <button
-                      class="btn button button--pink mt-3 mt-md-5"
+                      class="btn button button--orange mt-3 mt-md-5"
                       type="button"
                       onclick="window.location.href='booking.html'"
                     >
@@ -228,52 +239,101 @@
                   </div>
                 </div>
                 <!-- Bild -->
-                <div class="col-10 col-sm-7 col-md-5 col-lg-4 d-md-flex align-items-md-center">
+                <div
+                  class="col-10 col-sm-7 col-md-5 col-lg-4 d-md-flex align-items-md-center"
+                >
                   <img
                     src="/img/pexels-annam-w-1047442.jpg"
-                    class="card-img img-fluid rounded-1"
+                    class="card-img img-fluid rounded-3"
                     alt="..."
                   />
                 </div>
               </div>
             </div>
-            </div>
           </div>
         </div>
+      </section>
 
-      <div class="container">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/img/sb_ikon_sv.svg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="/img/sb_ikon_sv.svg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="/img/sb_ikon_sv.svg" class="d-block w-100" alt="..." />
+      <section class="bonfire__bg">
+        <div class="bonfire__main row justify-content-center">
+          <div class="offset-6 col-5">
+            <h2 class="font-black">new attraction, who dis</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Laudantium incidunt sapiente obcaecati nulla modi sit tenetur
+              iusto, cumque accusamus. Repellendus iusto est expedita? Debitis
+              quas officiis mollitia exercitationem, sapiente provident?
+            </p>
+          </div>
+          <div class="offset-6 col-5 mt-3">
+            <h2 class="font-black">speed and fart</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+              repellat laudantium odit doloremque. Natus adipisci, quas ipsum
+              repellat dolor, eos eius sunt sint, voluptatum reprehenderit
+              quasi. Earum enim illo atque!
+            </p>
+          </div>
+          <div class="row offset-5">
+            <button
+              class="btn button button--orange button--home mt-3 offset-4"
+              type="button"
+              onclick="window.location.href='area.html'"
+            >
+              explore more
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-5 py-5">
+        <!-- HÖGERCARD Yttercontainer för att justera cardet -->
+        <div class="my-5 py-5">
+          <!-- Card container -->
+          <div class="row g-5 bigcard__cont justify-content-end me-0">
+            <!-- Outlinen -->
+            <div
+              class="bigcard__outline bigcard__outline--right-bottom bigcard__outline--blue"
+            ></div>
+            <!-- Stort card -->
+            <div class="card bg-transparent">
+              <div class="row justify-content-center me-0">
+                <!-- Bild -->
+                <div
+                  class="col-10 col-sm-7 col-md-5 col-lg-4 d-md-flex align-items-md-center"
+                >
+                  <img
+                    src="/img/pexels-annam-w-1047442.jpg"
+                    class="card-img img-fluid rounded-3"
+                    alt="..."
+                  />
+                </div>
+                <!-- Body med text -->
+                <div
+                  class="col-10 col-sm-7 col-md-5 col-lg-4 ps-md-5 d-md-flex align-items-md-center"
+                >
+                  <div class="card-body">
+                    <h2 class="card-title rubrik mt-3 mt-md-0">Card title</h2>
+                    <p class="card-text brodtext">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aut, quidem officia! Architecto non aspernatur hic numquam
+                      libero reprehenderit a sint, illo culpa totam nulla, ullam
+                      aliquid magnam porro quae quaerat.
+                    </p>
+                    <button
+                      class="btn button button--blue mt-3 mt-md-5"
+                      type="button"
+                      onclick="window.location.href='booking.html'"
+                    >
+                      explore more
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
+      </section>
 
     </main>
     <footer></footer>

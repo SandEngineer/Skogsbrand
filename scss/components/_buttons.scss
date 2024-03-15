@@ -79,4 +79,18 @@
       background-color: $isbjorn;
     }
   }
+
+  &--white {
+    background-color: $aska;
+    color: $kol;
+
+    &:hover {
+      box-shadow: (0 0 1rem $aska);
+      background-color: $aska;
+    }
+  }
+
+  &--home {
+    width: 25vw;
+  }
 }
