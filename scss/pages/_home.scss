@@ -1,6 +1,7 @@
 // Fetches variables from the entire folder to use
 @use "../abstracts" as *;
 
+// Sätter bonfires bakgrund
 .bonfire__bg {
     background-image: url(/img/bonfire.webp);
     background-size: cover;
@@ -8,15 +9,25 @@
     height: 130vw;
     width: 95vw;
 
-    @include respond(md) {
-        width: 130vw;
+    // MQ för att bibehålla storlek vid förminskning
+    @include respond(lg) {
+        height: 140vw;
      }
 }
 
+// Justerar ner textbehållaren
 .bonfire__main {
     padding-top: 68vw;
 
-    @include respond(md) {
-        background-color: $kol;
+    @include respond(lg) {
+        padding-top: 70vw;
+     }
+}
+
+// MQ för tonplatta bakom text
+.bonfire__panel {
+
+    @include respond(lg) {
+        background: rgba(16,17,16,0.90);
      }
 }
