@@ -4,12 +4,17 @@
 .card,
 .card-body {
   border: none;
-  background-color: $kol;
 }
 
 .card {
   padding-right: 0;
   padding-left: 0;
+}
+
+.card__bg {
+  &--black {
+    background-color: $kol;
+  }
 }
 
 // Extra container för att transform ska funka på hela innehållet, inte varje del för sig
@@ -38,22 +43,22 @@
   border-width: 0.5rem;
   border-style: solid; 
   // Högerjusterad rundad topp
-  &--rightt {
+  &--right-top {
     border-right: none;
     border-radius: 15rem 0 0 0;
   }
   // Högerjusterad rundad botten
-  &--rightb {
+  &--right-bottom {
     border-right: none;
-    border-radius: 0 0 15rem 0;
+    border-radius: 0 0 0 15rem;
   }
   // Vänsterjusterad rundad topp
-  &--leftt {
+  &--left-top {
     border-left: none;
-    border-radius: 15rem 0 0 0;
+    border-radius: 0 15rem 0 0;
   }
   // Vänsterjusterad rundad botten
-  &--leftb {
+  &--left-bottom {
     border-left: none;
     border-radius: 0 0 15rem 0;
   }
@@ -69,6 +74,9 @@
   }
   &--green {
     border-color: $mojito;
+  }
+  &--white {
+    border-color: $aska;
   }
   // Custom scaling för att den ska hålla sig relativt relativ mot cardets storlek
   // Använder Bootstrap-brytpunkter

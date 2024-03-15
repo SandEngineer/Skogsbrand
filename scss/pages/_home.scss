@@ -1,2 +1,22 @@
 // Fetches variables from the entire folder to use
 @use "../abstracts" as *;
+
+.bonfire__bg {
+    background-image: url(/img/bonfire.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 130vw;
+    width: 95vw;
+
+    @include respond(md) {
+        width: 130vw;
+     }
+}
+
+.bonfire__main {
+    padding-top: 68vw;
+
+    @include respond(md) {
+        background-color: $kol;
+     }
+}
