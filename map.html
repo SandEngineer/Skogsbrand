@@ -9,6 +9,15 @@
       href="/node_modules/bootstrap/dist/css/bootstrap.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      src="https://kit.fontawesome.com/f6e30abb82.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -26,7 +35,7 @@
         <!-- Nav för lg-skärm -->
         <div class="navbar-right d-none d-md-block">
           <div class="menu-toggle" onclick="openNav()">
-            <img src="img/hamburger.svg" width="50%" class="" alt="" />
+            <img src="img/hamburger.svg" width="50%" alt="" />
             <p class="menu-text rubrik">menu</p>
           </div>
           <div class="rightside-border"></div>
@@ -54,7 +63,7 @@
         </div>
       </nav>
       <!-- It's map time -->
-      <section class="content">
+      <section class="mb-5">
         <div class="container">
           <div class="map-wrapper">
             <div id="toolTip"></div>
@@ -62,12 +71,121 @@
               id="map"
               data="/img/sb_karta_desktop_3.svg"
               type="image/svg+xml"
+              class="d-none d-md-block px-5"
+            ></object>
+            <object
+              id="map-mobile"
+              data="/img/sb_karta_mobile_4.svg"
+              type="image/svg+xml"
+              class="d-md-none"
             ></object>
           </div>
         </div>
       </section>
+      <!-- lista för attraktioner, under konstruktion jobbar hårt -->
+
+      <section class="attractions">
+        <div class="container">
+          <div class="row">
+            <h2>Attractions</h2>
+            <!-- Attractions Section -->
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item"><span class="attractions__number rubrik">1.</span>nattklubben</li>
+                <li class="list-group-item">2. chillyta</li>
+                <li class="list-group-item">3. slänggungan</li>
+                <li class="list-group-item">4. scenen</li>
+                <li class="list-group-item">5. restaurangen</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item">6. tältet</li>
+                <li class="list-group-item">7. pariserhjulet</li>
+                <li class="list-group-item">8. gågatan</li>
+                <li class="list-group-item">9. chillyta</li>
+                <li class="list-group-item">10. bonfire</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <!-- footer -->
+    <footer class="text-center text-lg-start brodtext mt-5">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="rubrik fs-5">navigation</h6>
+            <p>
+              <a href="home.html">home</a>
+            </p>
+            <p>
+              <a href="activities.html">activities</a>
+            </p>
+            <p>
+              <a href="booking.html">tickets</a>
+            </p>
+            <p>
+              <a href="area.html">the area</a>
+            </p>
+            <p>
+              <a href="map.html">map</a>
+            </p>
+            <p>
+              <a href="about.html">about us</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="rubrik fs-5">opening hours</h6>
+
+            <p>mån–tors 17–00 <br /></p>
+            <p>fre–sön 17–03</p>
+
+            <h6 class="rubrik fs-5 mt-5">find us</h6>
+            <p>Gyllbergens naturreservat<br />781 93 Borlänge</p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="rubrik fs-5">contact us</h6>
+            <p>
+              <i class="fa-regular fa-envelope fs-4 footer__icon"></i>
+              hello@skogsbrand.com
+            </p>
+            <p>
+              <i class="fa-solid fa-mobile-screen-button fs-4 footer__icon"></i>
+              0123-420 69 1337
+            </p>
+
+            <h6 class="rubrik fs-5 mt-5 mb-3">follow us</h6>
+            <p>
+              <a
+                href="https://www.instagram.com/skogsbrand"
+                class="footer__link"
+              >
+                <i class="fa-brands fa-instagram fs-2 footer__icon"></i>
+              </a>
+              <a href="https://www.tiktok.com/skogsbrand" class="footer__link">
+                <i
+                  class="fa-brands fa-tiktok fs-2 px-5 px-md-2 px-lg-4 footer__icon"
+                ></i>
+              </a>
+              <a
+                href="https://open.spotify.com/episode/5U2XUJHEDBGnWJchL4ok2h?si=602b023f37c74289"
+                class="footer__link"
+              >
+                <i class="fa-brands fa-spotify fs-2 footer__icon"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3">© 2024 Copyright: grupp2byrå</div>
+      <!-- Copyright -->
+    </footer>
+    <!-- footer -->
+
     <script src="/js/nav.js"></script>
     <script src="/js/map.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>

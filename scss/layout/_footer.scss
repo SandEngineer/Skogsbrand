@@ -1,2 +1,29 @@
 // Fetches variables from the entire folder to use
 @use "../abstracts" as *;
+
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $aska;
+  }
+
+  &:hover,
+  &:active {
+    text-shadow: 0 0 1rem $aska;
+  }
+}
+
+.footer {
+    background-color: $kol;
+    
+    
+    &__icon {
+      margin-right: .5rem;
+
+      &:hover,
+      &:active {
+        text-shadow: 0 0 1rem $aska;
+      }
+    }
+  }
