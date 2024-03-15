@@ -14,16 +14,11 @@ a {
   }
 }
 
-.footer {
+.footer__icon {
     background-color: $kol;
     
-    
-    &__icon {
-      margin-right: .5rem;
-
-      &:hover,
+          &:hover,
       &:active {
         text-shadow: 0 0 1rem $aska;
       }
-    }
   }
