@@ -26,6 +26,11 @@ h6, h5, h4, h3, h2, h1, .rubrik {
             color: $aska;
         }
     }
+    &--sm {
+        @include respond(sm) {
+            color: $aska;
+        }
+    }
 }
 
 p, .brodtext {
@@ -34,5 +39,3 @@ p, .brodtext {
     color: $aska;
     text-transform: none;
 }
-
-

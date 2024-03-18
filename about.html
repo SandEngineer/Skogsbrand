@@ -20,13 +20,39 @@
 
   <body>
     <header>
-      <h1>Hello, about us!</h1>
-      <p class="brodtext">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
-        doloribus laboriosam amet reprehenderit enim commodi quam, delectus,
-        harum nostrum, quas hic laborum quasi itaque beatae officiis impedit
-        maiores sunt praesentium.
-      </p>
+      <!-- Header med bild -->
+      <div class="mb-5">
+        <!-- Card container -->
+        <div class="row g-5 bigcard__cont me-0">
+          <!-- Stort card -->
+          <div class="card bg-transparent">
+            <div class="row me-0 d-flex flex-column-reverse flex-md-row">
+              <!-- Body med text -->
+              <div class="row g-0 offset-1 col-8 col-md-4 align-content-center">
+                <div class="card-body">
+                  <h2 class="card-title rubrik mt-3 mt-md-0">page title</h2>
+                  <p class="card-text brodtext">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aut, quidem officia! Architecto non aspernatur hic numquam
+                    libero reprehenderit a sint, illo culpa totam nulla, ullam
+                    aliquid magnam porro quae quaerat.
+                  </p>
+                </div>
+              </div>
+              <!-- Bild -->
+              <div class="col-12 col-md-7 pe-0">
+                <div class="card__imghead">
+                  <img
+                    src="/img/pexels-annam-w-1047442.jpg"
+                    class="header__img"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <nav>
@@ -55,7 +81,7 @@
           >
           <div class="overlay-content rubrik">
             <div
-              class="row row-cols-1 row-cols-lg-6 justify-content-lg-center gap-1 gap-lg-0"
+              class="row row-cols-1 row-cols-lg-6 justify-content-center gap-1 gap-lg-0"
             >
               <a class="col-md-auto" href="home.html">home</a>
               <a class="col-md-auto" href="activities.html">activities</a>
