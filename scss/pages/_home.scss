@@ -11,7 +11,22 @@
 
     // MQ för att bibehålla storlek vid förminskning
     @include respond(lg) {
-        height: 140vw;
+        height: 145vw;
+     }
+    @include respond(md) {
+        background-image: url(/img/skogsbrand_mob.webp);
+        height: 180vw;
+     }
+    @include respond(sm) {
+        background-size: 100vw 180vw;
+        height: 180vw;
+        width: 100vw;
+    }
+    @include respond(sm) {
+        background-image: url(/img/skogsbrand_li.webp);
+        background-size: 100vw;
+        height: 100vw;
+        width: 100vw;
      }
 }
 
@@ -20,14 +35,30 @@
     padding-top: 68vw;
 
     @include respond(lg) {
-        padding-top: 70vw;
+        padding-top: 72vw;
+     }
+    @include respond(md) {
+        padding-top: 80vw;
+     }
+    @include respond(sm) {
+        visibility: hidden;
+        padding-top: 0;
+     }
+
+}
+
+.bonfire__small {
+    visibility: hidden;
+
+    @include respond(sm) {
+       visibility: visible;
      }
 }
 
 // MQ för tonplatta bakom text
 .bonfire__panel {
 
-    @include respond(lg) {
+    @include respond(sm) {
         background: rgba(16,17,16,0.90);
      }
 }
