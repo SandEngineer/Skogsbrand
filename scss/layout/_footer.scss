@@ -1,6 +1,14 @@
 // Fetches variables from the entire folder to use
 @use "../abstracts" as *;
 
+footer {
+  background-image: 
+  url(/img/sb_wave_darkgreen.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 a {
   &:link,
   &:visited {
@@ -15,7 +23,7 @@ a {
 }
 
 .footer__icon {
-    background-color: $kol;
+    background-color: transparent;
     
           &:hover,
       &:active {
