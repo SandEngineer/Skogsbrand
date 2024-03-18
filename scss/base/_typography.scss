@@ -10,6 +10,10 @@ h6, h5, h4, h3, h2, h1, .rubrik {
     &--thin {
         font-weight: 300;
     }
+
+    &--smaller {
+        font-size: .8rem;
+    }
 }
 
 // Sätta svart textfärg
@@ -33,4 +37,5 @@ p, .brodtext {
     font-family: $noto-sans;
     font-weight: 400;
     color: $aska;
+    text-transform: none;
 }
