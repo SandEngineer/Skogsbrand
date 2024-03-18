@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lager_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #36a4da;
+                stroke-width: 0px;
+            }
+        </style>
+    </defs>
+    <path class="cls-1"
+        d="m12.51,6.78c.39,0,.72.08,1.01.24s.43.48.43.96-.14.77-.43.94-.62.25-1.01.25-.73-.08-1.01-.25c-.28-.16-.42-.48-.42-.94s.14-.8.42-.96c.28-.16.61-.24,1.01-.24Zm1.34,3.15v7.8h-2.69v-7.8h2.69Z" />
+</svg>

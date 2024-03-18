@@ -19,34 +19,34 @@
   </head>
 
   <body>
-    <header class="container">
-      <h1 class="pt-5">map over skogsbrand</h1>
-      <p class="brodtext col-lg-6">
-        Med kartan i hand har du tagit steget in i 'Lost in the Woods'. Varje
-        skugga och varje viskning lockar dig längre in i Skogsbrands mystiska
-        värld. Ditt äventyr väntar!
-      </p>
+    <header class="container mt-2">
+      <h1 class="pt-5 mt-5 mt-md-0">map over skogsbrand</h1>
     </header>
     <main>
+      <div class="container">
+        <p class="brodtext col-lg-6">
+          Med kartan i hand har du tagit steget in i 'Lost in the Woods'. Varje
+          skugga och varje viskning lockar dig längre in i Skogsbrands mystiska
+          värld. Ditt äventyr väntar!
+        </p>
+      </div>
 
       <!-- hela nav-taggen behövs på alla sidor -->
       <nav>
         <!-- Nav för lg-skärm -->
-        <div class="navbar-right d-none d-md-block">
-          <div class="menu-toggle" onclick="openNav()">
-            <img src="img/hamburger.svg" width="50%" alt="" />
-            <div class="menu-text rubrik mb-3">menu</div>
+        <div class="navbar-right d-none d-lg-block">
+          <div class="menu-toggle mx-lg-auto pb-lg-4" onclick="openNav()">
+            <img src="img/hamburger_nav.svg" alt="" />
           </div>
           <div class="rightside-border"></div>
         </div>
 
         <!-- nav för små skärmar -->
-        <div id="navbar-sm" class="navbar-top d-md-none">
-          <div class="menu-toggle-sm" onclick="openNav()">
-            <img src="img/hamburger.svg" class="menu-img-sm" alt="" />
-            <div class="menu-text rubrik">menu</div>
-          </div>
+        <div id="navbar-sm" class="navbar-top d-lg-none">
           <div class="rightside-border-sm"></div>
+          <div class="menu-toggle" onclick="openNav()">
+            <img src="img/hamburger_nav.svg" class="mx-1 px-md-2" alt="" />
+          </div>
         </div>
 
         <!-- Navbar -->
@@ -68,6 +68,7 @@
           </div>
         </div>
       </nav>
+
       <!-- It's map time -->
       <section class="mb-5">
         <div class="container">
@@ -77,23 +78,22 @@
               id="map"
               data="/img/sb_karta_desktop_3.svg"
               type="image/svg+xml"
-              class="d-none d-md-block px-5"
+              class="d-none d-lg-block px-5"
             ></object>
             <object
               id="map-mobile"
               data="/img/sb_karta_mobile_4.svg"
               type="image/svg+xml"
-              class="d-md-none"
+              class="d-lg-none"
             ></object>
           </div>
         </div>
       </section>
-      <!-- lista för attraktioner, under konstruktion jobbar hårt -->
 
+      <!-- lista för attraktioner -->
       <section class="attractions bg-body-secondary bg-opacity-10">
         <div class="row mx-auto container">
           <h2 class="text-center p-4">list of attractions</h2>
-          <!-- Attractions Section -->
           <div class="col">
             <ol class="list-group px-0">
               <li class="list-group-item attractions__list rubrik">
@@ -137,10 +137,6 @@
                   Äkta smaker från skogen!
                 </p>
               </li>
-            </ol>
-          </div>
-          <div class="col">
-            <ul class="list-group px-0">
               <li class="list-group-item attractions__list rubrik">
                 <span class="attractions__number brodtext">6</span> tältet
                 <p>
@@ -148,6 +144,11 @@
                   drycker i gott sällskap.
                 </p>
               </li>
+            </ol>
+          </div>
+          <!-- 1-5 uppe, 6-10 nere -->
+          <div class="col">
+            <ul class="list-group px-0">
               <li class="list-group-item attractions__list rubrik">
                 <span class="attractions__number brodtext">7</span>
                 pariserhjulet
@@ -175,6 +176,28 @@
                 <p>
                   Snabbaste och vildaste berg- och dalbanan bjuder på en
                   adrenalinfylld åktur. Vågar du ta dig an utmaningen?
+                </p>
+              </li>
+              <!-- service nere -->
+              <li class="list-group-item attractions__list rubrik">
+                <span class="attractions__number attractions__number--blue brodtext"><img src="img/info.svg" alt=""></span> infodisk
+                <p>
+                  Vid vår informationsdisk kan du hämta karta över skogsbrand
+                  och få all info du behöver för en perfekt kväll hos oss.
+                </p>
+              </li>
+              <li class="list-group-item attractions__list rubrik">
+                <span class="attractions__number attractions__number--transparent brodtext"><img src="img/wc.svg" alt=""></span> toaletter
+                <p>
+                  Våra wc-anläggningar är rena, rymliga och bekvämt belägna 
+                  runt om i parken ifall du behöver lätta på trycket.
+                </p>
+              </li>
+              <li class="list-group-item attractions__list rubrik">
+                <span class="attractions__number attractions__number--green brodtext"><img src="img/rokruta_1.svg" alt=""></span> rökruta
+                <p>
+                  Behöver du en paus från festligheterna? Besök vår utomhus
+                  rökyta perfekt för en lugn stund när suget sätter in.
                 </p>
               </li>
             </ul>
