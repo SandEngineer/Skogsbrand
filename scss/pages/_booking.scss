@@ -1,2 +1,20 @@
 // Fetches variables from the entire folder to use
 @use "../abstracts" as *;
+
+.booking-margin {
+  margin-top: -18rem;
+
+/*   @include respond(xxl) {
+    margin-top: -13rem;
+  }
+
+  @include respond(xl) {
+    margin-top: -15rem;
+  }
+  @include respond(lg) {
+    margin-top: -14rem;
+  }
+  @include respond(md) {
+    margin-top: -15rem;
+  } */
+}
