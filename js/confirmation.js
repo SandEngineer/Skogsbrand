@@ -8,7 +8,7 @@ const formData = JSON.parse(jsonData);
 const displayDiv = document.getElementById('displayData');
 if (formData) {
   displayDiv.innerHTML = `            <div class="rubrik row row-cols-1 text-center">
-  <p class="col fs-3">Hej ${formData.name}</p>
+  <p class="col rubrik fs-3">Hej ${formData.name}</p>
   <p class="brodtext fs-6 col">
     Tack för din beställning. En orderbekräftelse är skickad till
     ${formData.email}

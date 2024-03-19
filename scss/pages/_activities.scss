@@ -1,2 +1,16 @@
 // Fetches variables from the entire folder to use
 @use "../abstracts" as *;
+
+.date-corner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #efefefb0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.date-text {
+    color: $kol;
+    font-size: 14px;
+}
