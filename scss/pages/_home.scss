@@ -15,7 +15,8 @@
      }
     @include respond(md) {
         background-image: url(/img/skogsbrand_mob.webp);
-        height: 180vw;
+        height: 185vw;
+        width: 100vw;
      }
     @include respond(sm) {
         background-size: 100vw 180vw;
@@ -45,14 +46,6 @@
         padding-top: 0;
      }
 
-}
-
-.bonfire__small {
-    visibility: hidden;
-
-    @include respond(sm) {
-       visibility: visible;
-     }
 }
 
 // MQ för tonplatta bakom text
