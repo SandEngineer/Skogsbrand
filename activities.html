@@ -56,23 +56,22 @@
     </header>
 
     <main>
+      <!-- hela nav-taggen behövs på alla sidor -->
       <nav>
         <!-- Nav för lg-skärm -->
-        <div class="navbar-right d-none d-md-block">
-          <div class="menu-toggle" onclick="openNav()">
-            <img src="img/hamburger.svg" width="50%" alt="" />
-            <div class="menu-text rubrik mb-3">menu</div>
+        <div class="navbar-right d-none d-lg-block">
+          <div class="menu-toggle mx-lg-auto pb-lg-4" onclick="openNav()">
+            <img src="img/hamburger_nav.svg" alt="" />
           </div>
           <div class="rightside-border"></div>
         </div>
 
         <!-- nav för små skärmar -->
-        <div id="navbar-sm" class="navbar-top d-md-none">
-          <div class="menu-toggle-sm" onclick="openNav()">
-            <img src="img/hamburger.svg" class="menu-img-sm" alt="" />
-            <div class="menu-text rubrik">menu</div>
-          </div>
+        <div id="navbar-sm" class="navbar-top d-lg-none">
           <div class="rightside-border-sm"></div>
+          <div class="menu-toggle" onclick="openNav()">
+            <img src="img/hamburger_nav.svg" class="mx-1" alt="" />
+          </div>
         </div>
 
         <!-- Navbar -->
