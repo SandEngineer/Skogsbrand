@@ -4,7 +4,8 @@
 //Använd klasserna: btn button och button--färgen när du skapar en knapp
 //Exempel: <button class="btn button button--orange" type="submit">betala</button>
 
-.button { //funkar till synes likadant även om man döper den tillbaka till btn
+.button {
+  //funkar till synes likadant även om man döper den tillbaka till btn
   &,
   &:link,
   &:visited {
@@ -34,7 +35,8 @@
     &:hover {
       background-color: $aska;
     }
-    &:active { // vill inte av någon anledning, även i vanliga active, kräver mer efterforskning
+    &:active {
+      // vill inte av någon anledning, även i vanliga active, kräver mer efterforskning
       border-color: $aska;
       background-color: $aska;
     }
@@ -87,6 +89,21 @@
     &:hover {
       box-shadow: (0 0 1rem $aska);
       background-color: $aska;
+    }
+  }
+
+  &--landing {
+    color: $rosa-pantern;
+    background: transparent;
+    border: 3px solid $rosa-pantern;
+    width: 17rem;
+
+    &:hover {
+      color: $rosa-pantern;
+      background: transparent;
+      box-shadow: (0 0 1rem $rosa-pantern);
+      border: 3px solid $rosa-pantern;
+      background: transparent;
     }
   }
 }

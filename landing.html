@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Skogsbrand</title>
     <link rel="icon" href="img/sb_ikon_sv.svg" />
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <h1>Hello, world!</h1>
-      <p class="brodtext">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
-        doloribus laboriosam amet reprehenderit enim commodi quam, delectus,
-        harum nostrum, quas hic laborum quasi itaque beatae officiis impedit
-        maiores sunt praesentium.
-      </p>
+      <div class="landing__image d-flex align-items-center">
+        <div class="container">
+          <div class="row g-3 justify-content-evenly">
+            <div class="row justify-content-center mb-5">
+              <h1 class="col-8 text-center font-pink z-2">
+                are you ready to get lost in the woods?
+              </h1>
+            </div>
+            <button class="btn button button--landing col-4 z-2 navigateButton" type="button">
+              sure, why not?
+            </button>
+            <button class="btn button button--landing col-4 z-2 navigateButton" type="button">
+              yes
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/js/landing.js"></script>
   </body>
 </html>
