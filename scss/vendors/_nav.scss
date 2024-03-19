@@ -30,16 +30,9 @@
   z-index: 20;
 
   @include respond(md) {
-    width: 12vh;
+    width: 7vh;
     margin-top: 0;
   }
-  @include respond(sm) {
-    width: 10vh;
-  }
-
-/*   &--sm {
-    width: 14vh;
-  } */
 }
 
 
