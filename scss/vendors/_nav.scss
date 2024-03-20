@@ -21,9 +21,7 @@
 .menu-toggle {
   cursor: pointer;
   display: flex;
-/*   flex-direction: column; */
   width: 7vh;
-/*   justify-items: center; */
   color: $aska;
   margin-top: 1rem; /* Adjust margin-top as needed */
   padding: 0.2rem;
@@ -46,7 +44,6 @@
   height: 5vh;
   width: 100vw;
   display: flex;
-/*   flex-direction: column; /* Added to stack children vertically */
   justify-content: flex-start; /* Changed to flex-start */
   align-items: center; /* Center children horizontally */
   box-shadow: 0px 5px 12px 0px #efefef27;
@@ -77,6 +74,14 @@
   z-index: 98;
   animation: slide 15s linear infinite; /* Justera tiden efter behov för snabbare eller långsammare animation */
   margin: auto; /* Centrerar bilden horisontellt och behåller toppositionen vertikalt */
+
+  &-sm {
+    height: 50%; /* Height of your visible container */
+    width: 100%;
+    background-image: url("/img/sb_border_top.svg");
+    background-repeat: repeat-x; /* Important to allow the image to repeat horisontally */
+    animation: slide-sm 20s linear infinite; /* Adjust the time as needed for faster or slower animation */
+  }
 }
 
 /* animation small */
@@ -89,31 +94,6 @@
   }
 }
 
-.rightside-border-sm {
-  height: 50%; /* Height of your visible container */
-  width: 100%;
-  background-image: url("/img/sb_border_top.svg");
-  background-size: cover;
-  background-repeat: repeat-x; /* Important to allow the image to repeat vertically */
-  position: relative;
-  z-index: 98;
-  animation: slide-sm 20s linear infinite; /* Adjust the time as needed for faster or slower animation */
-  margin: auto; /* Centers the image horizontally and maintains the top position vertically */
-}
-
-
-
-
-// .rightside-border {
-//   height: 1000px; /* Höjden på din synliga container */
-//   width: 50%;
-//   background-image: url('/img/sb_border_right_side.svg');
-//   background-size: cover;
-//   background-repeat: repeat-y; /* Viktigt för att tillåta bilden att upprepas vertikalt */
-//   position: relative;
-//   z-index: 98;
-//   animation: slide 10s linear infinite; /* Justera tiden efter behov för snabbare eller långsammare animation */
-// }
 
 /* ------------------------------------------------------ */
 

@@ -31,7 +31,7 @@
 
       <!-- nav för små skärmar -->
       <div id="navbar-sm" class="navbar-top d-lg-none">
-        <div class="rightside-border-sm"></div>
+        <div class="rightside-border rightside-border-sm"></div>
         <div class="menu-toggle" onclick="openNav()">
           <img src="img/hamburger_nav.svg" class="mx-1" alt="" />
         </div>
@@ -101,71 +101,80 @@
         <div class="row row-cols-1 row-cols-md-3 justify-content-center">
           <!-- Korthållare för att transform ska funka -->
           <div class="col cardholder mt-3 m-lg-3">
-            <!-- Cardet -->
-            <div class="card card__bg--black card__border-orange">
-              <!-- Bild -->
-              <div class="card__image">
-                <img
-                  src="/img/pexels-annam-w-1047442.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <!-- Länk runt cardet som leder till activities.html -->
+            <a href="activities.html" class="card-link">
+              <!-- Cardet -->
+              <div class="card card__bg--black card__border-orange">
+                <!-- Bild -->
+                <div class="card__image">
+                  <img
+                    src="/img/pexels-annam-w-1047442.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <!-- Body med text -->
+                <div class="card-body small-card__text-box m-1 mt-4 mt-md-1 mt-lg-4 p-md-4">
+                  <h5 class="card-title rubrik">grand opening</h5>
+                  <p class="card-text brodtext">
+                    Glöm omvärden och släpp taget. Kom hit 31 maj och var med om
+                    ett nattligt äventyr!
+                  </p>
+                </div>
               </div>
-              <!-- Body med text -->
-              <div class="card-body m-1 p-md-4">
-                <h5 class="card-title rubrik">grand opening</h5>
-                <p class="card-text brodtext">
-                  Glöm omvärden och släpp taget. Kom hit 31 maj och var med om
-                  ett nattligt äventyr!
-                </p>
-              </div>
-            </div>
+            </a>
           </div>
 
           <!-- Korthållare för att transform ska funka -->
           <div class="col cardholder mt-3 m-lg-3">
-            <!-- Cardet -->
-            <div class="card card__bg--black card__border-pink">
-              <!-- Bild -->
-              <div class="card__image">
-                <img
-                  src="/img/pexels-moath-photos-19769176.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <!-- Länk runt cardet som leder till area.html -->
+            <a href="area.html" class="card-link">
+              <!-- Cardet -->
+              <div class="card card__bg--black card__border-pink">
+                <!-- Bild -->
+                <div class="card__image">
+                  <img
+                    src="/img/pexels-moath-photos-19769176.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <!-- Body med text -->
+                <div class="card-body small-card__text-box m-1 mt-4 mt-md-1 mt-lg-4 p-md-4">
+                  <h5 class="card-title rubrik">rides</h5>
+                  <p class="card-text brodtext">
+                    Adrenalinkickar garanteras för den som vågar sig på någon av
+                    våra åkattraktioner.
+                  </p>
+                </div>
               </div>
-              <!-- Body med text -->
-              <div class="card-body m-1 p-md-4">
-                <h5 class="card-title rubrik">rides</h5>
-                <p class="card-text brodtext">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
+            </a>
           </div>
 
           <!-- Korthållare för att transform ska funka -->
           <div class="col cardholder mt-3 m-lg-3">
-            <!-- Cardet -->
-            <div class="card card__bg--black card__border-blue">
-              <!-- Bild -->
-              <div class="card__image">
-                <img
-                  src="/img/pexels-martin-lopez-2240772.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <!-- Länk runt cardet som leder till activities.html -->
+            <a href="activities.html" class="card-link">
+              <!-- Cardet -->
+              <div class="card card__bg--black card__border-blue">
+                <!-- Bild -->
+                <div class="card__image">
+                  <img
+                    src="/img/pexels-martin-lopez-2240772.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <!-- Body med text -->
+                <div class="card-body small-card__text-box m-1 mt-4 mt-md-1 mt-lg-4 p-md-4">
+                  <h5 class="card-title rubrik">events</h5>
+                  <p class="card-text brodtext">
+                    Livemusik, eldshower och unika upplevelser som pilkastning
+                    under stjärnorna.
+                  </p>
+                </div>
               </div>
-              <!-- Body med text -->
-              <div class="card-body m-1 p-md-4">
-                <h5 class="card-title rubrik">events</h5>
-                <p class="card-text brodtext">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -276,103 +285,16 @@
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- Bonfires sektion -->
-      <section class="bonfire__bg">
-        <!-- Innehållscontainer för större storlekar -->
-        <div class="bonfire__main d-none d-md-block">
-          <!-- Container för justering -->
-          <div class="row offset-md-5 offset-lg-6 justify-content-center me-0">
-            <!-- Innehåll -->
-            <div
-              class="offset-1 offset-sm-0 col-10 bonfire__panel rounded-3 p-3"
-            >
-              <!-- Första paragraf -->
-              <div class="col">
-                <h2 class="font-black font-black--sm">
-                  new attraction, who dis
-                </h2>
-                <p class="font-black font-black--sm">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Laudantium incidunt sapiente obcaecati nulla modi sit tenetur
-                  iusto, cumque accusamus. Repellendus iusto est expedita?
-                  Debitis quas officiis mollitia exercitationem, sapiente
-                  provident?
-                </p>
-              </div>
-              <!-- Första paragraf -->
-              <div class="col mt-3">
-                <h2 class="font-black font-black--sm">speed and fart</h2>
-                <p class="font-black font-black--sm">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
-                  repellat laudantium odit doloremque. Natus adipisci, quas
-                  ipsum repellat dolor, eos eius sunt sint, voluptatum
-                  reprehenderit quasi. Earum enim illo atque!
-                </p>
-              </div>
-              <!-- Knapp -->
-              <div class="col">
-                <button
-                  class="btn button button--orange mt-3"
-                  type="button"
-                  onclick="window.location.href='area.html'"
-                >
-                  explore more
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Sektion för bonfires text i små storlekar -->
-      <section class="my-3 d-md-none">
-        <!-- Container för justering -->
-        <div class="row justify-content-center me-0">
-          <!-- Innehåll -->
-          <div class="offset-1 offset-sm-0 col-10 bonfire__panel rounded-3 p-3">
-            <!-- Första paragraf -->
-            <div class="col">
-              <h2>new attraction, who dis</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Laudantium incidunt sapiente obcaecati nulla modi sit tenetur
-                iusto, cumque accusamus. Repellendus iusto est expedita? Debitis
-                quas officiis mollitia exercitationem, sapiente provident?
-              </p>
-            </div>
-            <!-- Första paragraf -->
-            <div class="col mt-3">
-              <h2>speed and fart</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
-                repellat laudantium odit doloremque. Natus adipisci, quas ipsum
-                repellat dolor, eos eius sunt sint, voluptatum reprehenderit
-                quasi. Earum enim illo atque!
-              </p>
-            </div>
-            <!-- Knapp -->
-            <div class="col text-center">
-              <button
-                class="btn button button--orange mt-3"
-                type="button"
-                onclick="window.location.href='area.html'"
-              >
-                explore more
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div class="divider"></div>
 
-      <section class="my-5 py-5">
         <!-- HÖGERCARD Yttercontainer för att justera cardet -->
         <div class="my-5 py-5">
           <!-- Card container -->
           <div class="row g-5 bigcard__cont justify-content-end me-0">
             <!-- Outlinen -->
             <div
-              class="bigcard__outline bigcard__outline--right-bottom bigcard__outline--blue"
+              class="bigcard__outline bigcard__outline--right-top bigcard__outline--blue"
             ></div>
             <!-- Stort card -->
             <div class="card bg-transparent">
@@ -413,6 +335,89 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bonfires sektion -->
+      <section class="bonfire__bg">
+        <!-- Innehållscontainer för större storlekar -->
+        <div class="bonfire__main d-none d-md-block">
+          <!-- Container för justering -->
+          <div class="row offset-md-5 offset-lg-6 justify-content-center me-0">
+            <!-- Innehåll -->
+            <div
+              class="offset-1 offset-sm-0 col-10 bonfire__panel rounded-3 p-3"
+            >
+              <!-- Första paragraf -->
+              <div class="col">
+                <h2 class="font-black font-black--sm">
+                  new attraction, who dis
+                </h2>
+                <p class="font-black font-black--sm">
+                  Äntligen är den klar! Snabbaste och vildaste berg– och
+                  dalbanan som bjuder på en adrenalinfylld åktur. Vågar du ta
+                  dig an utmaningen?
+                </p>
+              </div>
+              <!-- Första paragraf -->
+              <div class="col mt-3">
+                <h2 class="font-black font-black--sm">speed and fart</h2>
+                <p class="font-black font-black--sm">
+                  Hastighet och spänning väntar! Med varje loop och sväng,
+                  kastas du in i en värld av spänning där adrenalin och natur
+                  smälter samman till en oförglömlig upplevelse i nattens
+                  mörker.
+                </p>
+              </div>
+              <!-- Knapp -->
+              <div class="col">
+                <button
+                  class="btn button button--orange mt-3"
+                  type="button"
+                  onclick="window.location.href='area.html'"
+                >
+                  explore more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sektion för bonfires text i små storlekar -->
+      <section class="my-3 d-md-none">
+        <!-- Container för justering -->
+        <div class="row justify-content-center me-0">
+          <!-- Innehåll -->
+          <div class="offset-1 offset-sm-0 col-10 bonfire__panel rounded-3 p-3">
+            <!-- Första paragraf -->
+            <div class="col">
+              <h2>new attraction, who dis</h2>
+              <p>
+                Äntligen är den klar! Snabbaste och vildaste berg– och dalbanan
+                som bjuder på en adrenalinfylld åktur. Vågar du ta dig an
+                utmaningen?
+              </p>
+            </div>
+            <!-- Första paragraf -->
+            <div class="col mt-3">
+              <h2>speed and fart</h2>
+              <p>
+                Hastighet och spänning väntar! Med varje loop och sväng, kastas
+                du in i en värld av spänning där adrenalin och natur smälter
+                samman till en oförglömlig upplevelse i nattens mörker.
+              </p>
+            </div>
+            <!-- Knapp -->
+            <div class="col text-center">
+              <button
+                class="btn button button--orange mt-3"
+                type="button"
+                onclick="window.location.href='area.html'"
+              >
+                explore more
+              </button>
             </div>
           </div>
         </div>
