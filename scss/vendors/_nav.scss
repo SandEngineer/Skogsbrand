@@ -67,7 +67,7 @@
 .rightside-border {
   height: 100%; /* Höjden på din synliga container */
   width: 50%;
-  background-image: url("../../img/sb_border_right_side.svg");
+  background-image: url("../img/sb_border_right_side.svg");
   background-size: cover;
   background-repeat: repeat-y; /* Viktigt för att tillåta bilden att upprepas vertikalt */
   position: relative;
@@ -78,7 +78,7 @@
   &-sm {
     height: 50%; /* Height of your visible container */
     width: 100%;
-    background-image: url("../../img/sb_border_top.svg");
+    background-image: url("../img/sb_border_top.svg");
     background-repeat: repeat-x; /* Important to allow the image to repeat horisontally */
     animation: slide-sm 20s linear infinite; /* Adjust the time as needed for faster or slower animation */
   }

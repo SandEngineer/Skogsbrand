@@ -3,7 +3,7 @@
 
 // Sätter bonfires bakgrund
 .bonfire__bg {
-    background-image: url("../../img/bonfire.webp");
+    background-image: url("../img/bonfire.webp");
     background-size: cover;
     background-repeat: no-repeat;
     height: 130vw;
@@ -14,7 +14,7 @@
         height: 145vw;
      }
     @include respond(md) {
-        background-image: url("../../img/skogsbrand_mob.webp");
+        background-image: url("../img/skogsbrand_mob.webp");
         height: 185vw;
         width: 100vw;
      }
@@ -24,7 +24,7 @@
         width: 100vw;
     }
     @include respond(sm) {
-        background-image: url("../../img/skogsbrand_li.webp");
+        background-image: url("../img/skogsbrand_li.webp");
         background-size: 100vw;
         height: 100vw;
         width: 100vw;
