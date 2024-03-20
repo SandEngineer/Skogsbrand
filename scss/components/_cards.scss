@@ -4,11 +4,20 @@
 .card,
 .card-body {
   border: none;
+
+  &:hover,
+  &:active {
+    text-shadow: none;
+  }
 }
 
 .card {
   padding-right: 0;
   padding-left: 0;
+}
+
+.small-card__text-box {
+  height: 13rem;
 }
 
 .card__bg {

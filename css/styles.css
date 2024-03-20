@@ -1,0 +1,994 @@
+@charset "UTF-8";
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all abstracts imports.
+Files inside this folder can contain abstract settings, helpers or functions. They have no direct output.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*MIXIN & IF-CONDITIONS*/
+/*
+This file is used to contain all base imports.
+Files inside this folder can contain global styles used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.divider {
+  height: 5rem;
+}
+
+.divider-lg {
+  height: 10rem;
+}
+
+.divider-xl {
+  height: 20rem;
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+h6, h5, h4, h3, h2, h1, .rubrik {
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  color: #efefef;
+  text-transform: lowercase;
+}
+h6--thin, h5--thin, h4--thin, h3--thin, h2--thin, h1--thin, .rubrik--thin {
+  font-weight: 300;
+}
+h6--smaller, h5--smaller, h4--smaller, h3--smaller, h2--smaller, h1--smaller, .rubrik--smaller {
+  font-size: 0.8rem;
+}
+
+.font-black {
+  color: #101110;
+}
+@media (max-width: 1200px) {
+  .font-black--lg {
+    color: #efefef;
+  }
+}
+@media (max-width: 768px) {
+  .font-black--sm {
+    color: #efefef;
+  }
+}
+
+p, .brodtext {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: #efefef;
+  text-transform: none;
+}
+
+.font-pink {
+  color: #e02e87;
+}
+
+/*
+This file is used to contain all component imports.
+Files inside this folder should contain all styles relating to a reusable component.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.button, .button:link, .button:visited {
+  text-transform: lowercase;
+  font-family: "Prompt", sans-serif;
+  color: #efefef;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 0.7rem 3rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  border-width: 3px;
+}
+.button:hover {
+  transform: translateY(-1px);
+}
+.button:active {
+  transform: translateY(1px);
+}
+.button--back {
+  border-color: #efefef;
+}
+.button--back:hover {
+  background-color: #efefef;
+}
+.button--back:active {
+  border-color: #efefef;
+  background-color: #efefef;
+}
+.button--orange {
+  background-color: #ea652f;
+  border-color: #ea652f;
+}
+.button--orange:hover {
+  color: #efefef;
+  box-shadow: 0 0 1rem #ea652f;
+  background-color: #ea652f;
+}
+.button--pink {
+  background-color: #e02e87;
+}
+.button--pink:hover {
+  color: #efefef;
+  box-shadow: 0 0 1rem #e02e87;
+  background-color: #e02e87;
+}
+.button--green {
+  background-color: #6bb239;
+}
+.button--green:hover {
+  color: #efefef;
+  box-shadow: 0 0 1rem #6bb239;
+  background-color: #6bb239;
+}
+.button--blue {
+  background-color: #36a4da;
+}
+.button--blue:hover {
+  color: #efefef;
+  box-shadow: 0 0 1rem #36a4da;
+  background-color: #36a4da;
+}
+.button--white {
+  background-color: #efefef;
+  color: #101110;
+}
+.button--white:hover {
+  box-shadow: 0 0 1rem #efefef;
+  background-color: #efefef;
+}
+.button--landing {
+  color: #e02e87;
+  background: transparent;
+  border: 3px solid #e02e87;
+  width: 17rem;
+}
+.button--landing:hover {
+  color: #e02e87;
+  background: transparent;
+  box-shadow: 0 0 1rem #e02e87;
+  border: 3px solid #e02e87;
+  background: transparent;
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.card,
+.card-body {
+  border: none;
+}
+.card:hover, .card:active,
+.card-body:hover,
+.card-body:active {
+  text-shadow: none;
+}
+
+.card {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.small-card__text-box {
+  height: 13rem;
+}
+
+.card__bg--black {
+  background-color: #101110;
+}
+
+.cardholder {
+  transition: all 0.1s;
+  min-width: 10rem;
+  max-width: 18rem;
+}
+.cardholder:hover {
+  transform: translate(0, -3px);
+}
+
+.bigcard__cont {
+  position: relative;
+}
+
+.bigcard__outline {
+  position: absolute;
+  top: -5rem;
+  z-index: -1;
+  height: 130%;
+  width: 70%;
+  background-clip: padding-box;
+  border-width: 0.5rem;
+  border-style: solid;
+}
+.bigcard__outline--right-top {
+  border-right: none;
+  border-radius: 15rem 0 0 0;
+}
+.bigcard__outline--right-bottom {
+  border-right: none;
+  border-radius: 0 0 0 15rem;
+}
+.bigcard__outline--left-top {
+  border-left: none;
+  border-radius: 0 15rem 0 0;
+}
+.bigcard__outline--left-bottom {
+  border-left: none;
+  border-radius: 0 0 15rem 0;
+}
+.bigcard__outline--orange {
+  border-color: #ea652f;
+}
+.bigcard__outline--pink {
+  border-color: #e02e87;
+}
+.bigcard__outline--blue {
+  border-color: #36a4da;
+}
+.bigcard__outline--green {
+  border-color: #6bb239;
+}
+.bigcard__outline--white {
+  border-color: #efefef;
+}
+@media (max-width: 1400px) {
+  .bigcard__outline {
+    height: 132%;
+    width: 70%;
+  }
+}
+@media (max-width: 1200px) {
+  .bigcard__outline {
+    height: 130%;
+  }
+}
+@media (max-width: 992px) {
+  .bigcard__outline {
+    height: 130%;
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .bigcard__outline {
+    height: 115%;
+    width: 60%;
+  }
+}
+@media (max-width: 576px) {
+  .bigcard__outline {
+    width: 70%;
+  }
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.form__input {
+  border-color: #36a4da;
+}
+.form__input:focus {
+  border-color: #FCE383;
+  filter: drop-shadow(0 0 0.5rem #36a4da);
+}
+
+.form__feedback {
+  font-size: 0.8rem;
+}
+.form__feedback.valid-feedback {
+  color: #198754;
+}
+.form__feedback.invalid-feedback {
+  color: #dc3545;
+}
+
+.form-bg {
+  border-radius: 10px;
+}
+.form-bg--black {
+  background-color: #101110;
+}
+
+/*
+This file is used to contain all layout imports.
+Files inside this folder can contain layouts used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+footer {
+  background-image: url(/img/sb_wave_darkgreen.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #efefef;
+}
+a:hover, a:active {
+  text-shadow: 0 0 1rem #efefef;
+}
+
+.footer__icon {
+  background-color: transparent;
+}
+.footer__icon:hover, .footer__icon:active {
+  text-shadow: 0 0 1rem #efefef;
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.card__imghead {
+  height: 70vh;
+}
+
+.header__img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .header__cont {
+    margin-top: 0;
+  }
+}
+@media (max-width: 992px) {
+  .header__cont {
+    margin-top: 5vh;
+  }
+}
+@media (max-width: 768px) {
+  .header__cont {
+    margin-top: 0;
+  }
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, rgb(16, 17, 16) 0%, rgba(16, 17, 16, 0.5) 80%, rgba(16, 17, 16, 0) 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+/*
+This file is used to contain all page imports.
+Files inside this folder can contain page-specific styles used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.google {
+  height: 50rem;
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.date-corner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(239, 239, 239, 0.6901960784);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.date-text {
+  color: #101110;
+  font-size: 14px;
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.booking-margin {
+  margin-top: -18rem;
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.list-group-item {
+  color: #efefef;
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  padding: 0.2rem;
+}
+
+.rubrik--larger {
+  font-size: 2rem;
+}
+
+.confirm-img {
+  height: 50vh;
+  background-image: linear-gradient(to top, rgb(16, 17, 16) 0%, rgba(16, 17, 16, 0.5) 80%, rgba(16, 17, 16, 0) 100%), url(/img/stagedive.webp);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  z-index: -1;
+}
+.confirm-img__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.confirm-info {
+  margin-top: -5rem;
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.bonfire__bg {
+  background-image: url(/img/bonfire.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130vw;
+  width: 95vw;
+}
+@media (max-width: 1200px) {
+  .bonfire__bg {
+    height: 145vw;
+  }
+}
+@media (max-width: 992px) {
+  .bonfire__bg {
+    background-image: url(/img/skogsbrand_mob.webp);
+    height: 185vw;
+    width: 100vw;
+  }
+}
+@media (max-width: 768px) {
+  .bonfire__bg {
+    background-size: 100vw 180vw;
+    height: 180vw;
+    width: 100vw;
+  }
+}
+@media (max-width: 768px) {
+  .bonfire__bg {
+    background-image: url(/img/skogsbrand_li.webp);
+    background-size: 100vw;
+    height: 100vw;
+    width: 100vw;
+  }
+}
+
+.bonfire__main {
+  padding-top: 68vw;
+}
+@media (max-width: 1200px) {
+  .bonfire__main {
+    padding-top: 72vw;
+  }
+}
+@media (max-width: 992px) {
+  .bonfire__main {
+    padding-top: 80vw;
+  }
+}
+@media (max-width: 768px) {
+  .bonfire__main {
+    visibility: hidden;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .bonfire__panel {
+    background: rgba(16, 17, 16, 0.9);
+  }
+}
+
+.map__bg {
+  background-color: #101110;
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.landing__image {
+  position: relative;
+  overflow: hidden; /* Förhindrar att gradienten rinner över containerkanterna */
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/img/jay-mantri-TFyi0QOx08c-unsplash.jpg);
+  background-size: 100vw 100vh;
+}
+.landing__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(16, 17, 16) 100%);
+  pointer-events: none; /* Säkerställer att klick fortfarande fungerar på bilden under */
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.button-appear {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Denna klass läggs till dynamiskt för att starta animationen */
+.animate-button {
+  animation: fadeInAnimation ease 3s;
+  animation-delay: 1s; /* Justera tiden för när animationen ska starta */
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  animation: fadeOutAnimation 0.5s ease-out forwards;
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+div#toolTip ul {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+div#toolTip b {
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+/*
+This file is used to contain all theme imports.
+Files inside this folder can contain site-wide themes used in the project.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used for our default theme across the entire site.
+*/
+body {
+  background-color: #101110;
+}
+
+/* ändra färg när man markerar text */
+::selection {
+  color: #101110;
+  background: #efefef;
+}
+
+/*
+This file is used to contain all vendor imports.
+@forward is used instead of @import so the main styles.css can @use the entire folder instead of having to @import every file individually
+*/
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.card__image {
+  position: relative;
+  overflow: hidden; /* Förhindrar att gradienten rinner över containerkanterna */
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+.card__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(16, 17, 16) 100%);
+  pointer-events: none; /* Säkerställer att klick fortfarande fungerar på bilden under */
+}
+
+.card__border-orange {
+  background-clip: padding-box; /* !importanté */
+  border: solid 4px transparent; /* !importanté */
+  border-radius: 1em;
+}
+.card__border-orange:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -4px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: linear-gradient(to right, #ea652f, #e02e87);
+}
+.card__border-orange:hover {
+  box-shadow: 0 0 2rem #ea652f;
+}
+
+.card__border-pink {
+  background-clip: padding-box; /* !importanté */
+  border: solid 4px transparent; /* !importanté */
+  border-radius: 1em;
+}
+.card__border-pink:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -4px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: linear-gradient(to right, #e02e87, #36a4da);
+}
+.card__border-pink:hover {
+  box-shadow: 0 0 2rem #e02e87;
+}
+
+.card__border-blue {
+  background-clip: padding-box; /* !importanté */
+  border: solid 4px transparent; /* !importanté */
+  border-radius: 1em;
+}
+.card__border-blue:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -4px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: linear-gradient(to right, #36a4da, #6bb239);
+}
+.card__border-blue:hover {
+  box-shadow: 0 0 2rem #36a4da;
+}
+
+.card__border-green {
+  background-clip: padding-box; /* !importanté */
+  border: solid 4px transparent; /* !importanté */
+  border-radius: 1em;
+}
+.card__border-green:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -4px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: linear-gradient(to right, #6bb239, #ea652f);
+}
+.card__border-green:hover {
+  box-shadow: 0 0 2rem #6bb239;
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+.card__imghead {
+  position: relative;
+  overflow: hidden; /* Förhindrar att gradienten rinner över containerkanterna */
+}
+.card__imghead::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgb(16, 17, 16) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(16, 17, 16) 100%);
+  pointer-events: none; /* Säkerställer att klick fortfarande fungerar på bilden under */
+}
+@media (max-width: 768px) {
+  .card__imghead::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(16, 17, 16) 100%);
+    pointer-events: none; /* Säkerställer att klick fortfarande fungerar på bilden under */
+  }
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+section.content {
+  flex: 1 1 80%;
+  padding: 30px;
+  position: relative;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+object#map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+div#toolTip {
+  max-width: 300px;
+  box-shadow: rgba(121, 121, 121, 0.274) 1.95px 1.95px 2.6px;
+  position: absolute;
+  transition: 0.2s ease-out;
+  background-color: #ecf0f1;
+  border-radius: 3px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+div#toolTip ul {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+}
+
+div#toolTip ul li {
+  margin-bottom: 3px;
+}
+
+/* list of attractions */
+.list-group {
+  padding-left: 0;
+}
+
+.attractions__list {
+  position: relative;
+  padding-left: 60px; /* Adjust this value as needed */
+  margin-bottom: 20px;
+}
+
+.list-group-item .attractions__number {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #efefef;
+  text-align: center;
+  line-height: 35px;
+  color: #efefef; /* Adjust the color as needed */
+}
+.list-group-item .attractions__number--green {
+  border: 2px solid #6bb239;
+}
+.list-group-item .attractions__number--blue {
+  border: 2px solid #36a4da;
+}
+.list-group-item .attractions__number--transparent {
+  border: 2px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.attractions__number {
+  border-color: #efefef; /* Adjust the border color */
+}
+
+/*
+This file is used to contain all scss imports.
+@use the entire folder instead of having to @import every file individually
+*/
+/* Navbaren, sidobar */
+.navbar-right {
+  background-color: #101110;
+  position: fixed; /* changed to fixed to make it stick to the right side of the page */
+  top: 0; /* Adjust if you want to add some space from the top */
+  right: 0;
+  height: 100vh;
+  width: 5vw;
+  display: flex;
+  flex-direction: column; /* Added to stack children vertically */
+  justify-content: flex-start; /* Changed to flex-start */
+  align-items: center; /* Center children horizontally */
+  box-shadow: -5px 0px 12px 0px rgba(239, 239, 239, 0.1529411765);
+  -webkit-box-shadow: -5px 0px 12px 0px rgba(239, 239, 239, 0.1529411765);
+  -moz-box-shadow: -5px 0px 12px 0px rgba(239, 239, 239, 0.1529411765);
+  z-index: 99;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: flex;
+  width: 7vh;
+  color: #efefef;
+  margin-top: 1rem; /* Adjust margin-top as needed */
+  padding: 0.2rem;
+  z-index: 20;
+}
+@media (max-width: 992px) {
+  .menu-toggle {
+    width: 7vh;
+    margin-top: 0;
+  }
+}
+
+/* navbar - small */
+.navbar-top {
+  background-color: #101110;
+  position: fixed; /* changed to fixed to make it stick to the right side of the page */
+  top: 0; /* Adjust if you want to add some space from the top */
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start; /* Changed to flex-start */
+  align-items: center; /* Center children horizontally */
+  box-shadow: 0px 5px 12px 0px rgba(239, 239, 239, 0.1529411765);
+  -webkit-box-shadow: 0px 5px 12px 0px rgba(239, 239, 239, 0.1529411765);
+  -moz-box-shadow: 0px 5px 12px 0px rgba(239, 239, 239, 0.1529411765);
+  transition: top 1s;
+  z-index: 99;
+}
+
+/* ------------------------------- */
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -1239.1px; /* Antag att din bild är 1000px hög och kan loopas sömlöst */
+  }
+}
+.rightside-border {
+  height: 100%; /* Höjden på din synliga container */
+  width: 50%;
+  background-image: url("/img/sb_border_right_side.svg");
+  background-size: cover;
+  background-repeat: repeat-y; /* Viktigt för att tillåta bilden att upprepas vertikalt */
+  position: relative;
+  z-index: 98;
+  animation: slide 15s linear infinite; /* Justera tiden efter behov för snabbare eller långsammare animation */
+  margin: auto; /* Centrerar bilden horisontellt och behåller toppositionen vertikalt */
+}
+.rightside-border-sm {
+  height: 50%; /* Height of your visible container */
+  width: 100%;
+  background-image: url("/img/sb_border_top.svg");
+  background-repeat: repeat-x; /* Important to allow the image to repeat horisontally */
+  animation: slide-sm 20s linear infinite; /* Adjust the time as needed for faster or slower animation */
+}
+
+/* animation small */
+@keyframes slide-sm {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 619.55px 0; /* Rotate 90 degrees by changing the position */
+  }
+}
+/* ------------------------------------------------------ */
+/* Overlay meny */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  right: 0;
+  background-color: #101110;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #efefef;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  text-shadow: 0 0 1rem #efefef;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 2rem;
+  right: 45px;
+  font-size: 60px;
+}
+
+/*# sourceMappingURL=styles.css.map */

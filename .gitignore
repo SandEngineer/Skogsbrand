@@ -2,4 +2,4 @@
 # Ignore the css folder because it gets regenerated every time we launch the live compiler and avoids merge conflicts
 node_modules/
 .vscode/
-css/
+
