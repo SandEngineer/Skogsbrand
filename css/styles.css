@@ -317,7 +317,7 @@ This file is used to contain all scss imports.
 @use the entire folder instead of having to @import every file individually
 */
 footer {
-  background-image: url(/img/sb_wave_darkgreen.svg);
+  background-image: url("../../img/sb_wave_darkgreen.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -465,7 +465,7 @@ This file is used to contain all scss imports.
 @use the entire folder instead of having to @import every file individually
 */
 .bonfire__bg {
-  background-image: url(/img/bonfire.webp);
+  background-image: url("../../img/bonfire.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 130vw;
@@ -478,7 +478,7 @@ This file is used to contain all scss imports.
 }
 @media (max-width: 992px) {
   .bonfire__bg {
-    background-image: url(/img/skogsbrand_mob.webp);
+    background-image: url("../../img/skogsbrand_mob.webp");
     height: 185vw;
     width: 100vw;
   }
@@ -492,7 +492,7 @@ This file is used to contain all scss imports.
 }
 @media (max-width: 768px) {
   .bonfire__bg {
-    background-image: url(/img/skogsbrand_li.webp);
+    background-image: url("../../img/skogsbrand_li.webp");
     background-size: 100vw;
     height: 100vw;
     width: 100vw;
@@ -538,7 +538,7 @@ This file is used to contain all scss imports.
   overflow: hidden; /* Förhindrar att gradienten rinner över containerkanterna */
   height: 100vh;
   width: 100vw;
-  background-image: url(/img/jay-mantri-TFyi0QOx08c-unsplash.jpg);
+  background-image: url("../../img/jay-mantri-TFyi0QOx08c-unsplash.jpg");
   background-size: 100vw 100vh;
 }
 .landing__image::after {
@@ -924,7 +924,7 @@ This file is used to contain all scss imports.
 .rightside-border {
   height: 100%; /* Höjden på din synliga container */
   width: 50%;
-  background-image: url("/img/sb_border_right_side.svg");
+  background-image: url("../../img/sb_border_right_side.svg");
   background-size: cover;
   background-repeat: repeat-y; /* Viktigt för att tillåta bilden att upprepas vertikalt */
   position: relative;
@@ -935,7 +935,7 @@ This file is used to contain all scss imports.
 .rightside-border-sm {
   height: 50%; /* Height of your visible container */
   width: 100%;
-  background-image: url("/img/sb_border_top.svg");
+  background-image: url("../../img/sb_border_top.svg");
   background-repeat: repeat-x; /* Important to allow the image to repeat horisontally */
   animation: slide-sm 20s linear infinite; /* Adjust the time as needed for faster or slower animation */
 }
