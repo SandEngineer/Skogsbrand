@@ -2,8 +2,8 @@
 @use "../abstracts" as *;
 
 // Include parts of Bootstrap
-@import "../node_modules/bootstrap/scss/functions"; // Krävs för att variables ska funka
-@import "../node_modules/bootstrap/scss/variables"; // Innehåller $success och $danger
+@import "../../node_modules/bootstrap/scss/functions"; // Krävs för att variables ska funka - behöver ta bort första ../ för att göra webbkompatibel
+@import "../../node_modules/bootstrap/scss/variables"; // Innehåller $success och $danger - behöver ta bort första ../ för att göra webbkompatibel
 
 .form__input {
   border-color: $isbjorn;
